@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Body from './components/Body';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavbarBoostrap from './components/NavbarBoostrap';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-            Ricardo <code>López</code>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Primera Entrega
-        </a>
-      </header>
+    <div>
+        <NavbarBoostrap/>
+        <Navbar />
+        <Body />
+        <Body />
     </div>
   );
 }

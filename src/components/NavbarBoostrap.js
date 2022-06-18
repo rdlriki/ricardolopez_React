@@ -7,14 +7,14 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function BasicExample() {
     return (
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="light" expand="lg" >
         <Container>
-            <img
+            <img 
                 alt=""
                 src={require('./Img/PyE.jpg')} 
                 width="60"
                 height="auto"
-                className="d-inline-block align-top"
+                className="d-inline-block align-top me-2 rounded shadow bg-white rounded"
                 />{' '}
                 Pizzas y Empanadas
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -37,6 +37,13 @@ function BasicExample() {
                 <Nav.Link href="#link">Contacto</Nav.Link>
             </Nav>
             </Navbar.Collapse>
+            <img 
+                alt=""
+                src={require('./Img/cartImg.png')} 
+                width="30"
+                height="auto"
+                className="d-inline-block align-text-bottom me-2 rounded"
+                />{' '}
         </Container>
         </Navbar>
     );

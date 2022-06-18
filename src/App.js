@@ -3,15 +3,18 @@ import Navbar from './components/Navbar';
 import Body from './components/Body';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarBoostrap from './components/NavbarBoostrap';
-
+import ItemListContainer from './components/ItemListContainer'
 
 function App() {
   return (
     <div>
         <NavbarBoostrap/>
-        <Navbar />
+        <ItemListContainer greetings="Item List Container"/>
+{/*         <Navbar />
         <Body />
         <Body />
+ */}
+        
     </div>
   );
 }

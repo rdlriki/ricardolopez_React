@@ -1,12 +1,11 @@
 import './Body.css';
-import Card from './Card';
+import Cards from './Cards';
 
 function Body() {
     return (
     <section className='cuerpo'>
-        <Card />
-        <Card />
-        <Card />
+        <Cards />
+        
     </section>
     )
 }

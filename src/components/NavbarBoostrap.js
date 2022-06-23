@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-function BasicExample() {
+function NavbarBoostrap() {
     return (
         <Navbar bg="light" expand="lg" >
         <Container>
@@ -16,11 +16,11 @@ function BasicExample() {
                 height="auto"
                 className="d-inline-block align-top me-2 rounded shadow bg-white rounded"
                 />{' '}
-                Pizzas y Empanadas
+                
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="#home">Pizzas y Empanadas</Nav.Link>
                 <Nav.Link href="#link">Promociones</Nav.Link>
                 <NavDropdown title="Cocina" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Pizzas</NavDropdown.Item>
@@ -49,4 +49,4 @@ function BasicExample() {
     );
     }
 
-    export default BasicExample;
+    export default NavbarBoostrap;

@@ -1,6 +1,6 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Body from './components/Body';
+/* import Navbar from './components/Navbar';*/
+import Body from './components/Body'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarBoostrap from './components/NavbarBoostrap';
 import ItemListContainer from './components/ItemListContainer'
@@ -10,10 +10,9 @@ function App() {
     <div>
         <NavbarBoostrap/>
         <ItemListContainer greetings="Item List Container"/>
-{/*         <Navbar />
-        <Body />
-        <Body />
- */}
+{/*         <Navbar /> */}
+       {/*  <Body /> */}
+
         
     </div>
   );

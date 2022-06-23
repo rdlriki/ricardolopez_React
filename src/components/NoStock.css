@@ -1,0 +1,13 @@
+.noStock{
+    font-size: 15px;
+    margin-left: 5px;
+    font-weight: bold;
+    color:red;
+}
+
+.carritoVacio{
+    font-size: 15px;
+    margin-left: 5px;
+    font-weight: bold;
+    color:green;
+}

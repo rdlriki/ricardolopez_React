@@ -1,0 +1,57 @@
+.cards{
+    width: 350px;
+    height: auto;
+    margin: auto auto 10px auto;
+    align-items: center;
+    justify-content:center;
+
+}
+
+.alinearCard{
+    align-items: center;
+}
+
+.cardBody{
+    text-align: center;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    vertical-align: middle;
+}
+
+.botones Button{
+    border: 1px solid black;
+}
+
+.cantidad{
+    margin: 0px 10px 0px 10px;
+    font-size: 15px;
+
+}
+
+.cardText{
+    margin-top: 5px;
+    font-size: 15px;
+    height: 60px;
+}
+
+.cardPrecio{
+    margin: auto auto 5px auto;
+    font-size: 15px;
+}
+
+.carritoReiniciar{
+    display: flex;
+    flex-direction: column;
+    width: 180px;
+    margin-bottom:10px;
+}
+
+.carritoReiniciar Button{
+    margin-top:2px;    
+    border: 1px solid black;
+}

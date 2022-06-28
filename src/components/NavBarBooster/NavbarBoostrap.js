@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -11,7 +11,7 @@ function NavbarBoostrap() {
         <Container>
             <img 
                 alt=""
-                src={require('./Img/PyE.jpg')} 
+                src={require('../Assets/Img/PyE.jpg')} 
                 width="60"
                 height="auto"
                 className="d-inline-block align-top me-2 rounded shadow bg-white rounded"
@@ -39,7 +39,7 @@ function NavbarBoostrap() {
             </Navbar.Collapse>
             <img 
                 alt=""
-                src={require('./Img/cartImg.png')} 
+                src={require('../Assets/Img/cartImg.png')} 
                 width="30"
                 height="auto"
                 className="d-inline-block align-text-bottom me-2 rounded"

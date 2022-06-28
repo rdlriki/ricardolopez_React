@@ -13,3 +13,7 @@ Comision 31220
 
 ## Clase 4: Contador con Botón
 - 22/06/2022: Subo la cuarta entrega de la clase. Aquí estoy mostrando la informacion en el ItemListContainer. En él estoy colocando el stock disponible, muestro la cantidad que va a incrementarse o decrementarse segun se seleccione. En el caso de llegar hasta el stock, indica que no hay mas stock y no suma mas. En el caso de llegar a 0, se indica que el carrito esta vacio. Al apretar Reiniciar, el valor vuelve a 1. 
+
+## Clase 5: Catálogo con MAPS y Promises
+- 28/06/2022: Subo la quinta entrega de la clase. Aqui estoy adaptando el proyecto al uso de un JSON. Utilizando un Fetch (con un TimeOut de 2segundos), traigo la informacion que la levanta ItemListConteiner, que luego se la pasa a ItemList quien la acomoda en PROPS de acuerdo al nombre de cada item y por último, es Item quien genera las cards de Booster.
+En esta etapa deje los botones de sumar y restar, agregar carrito y reiniciar en cada CARDS. En una proxima entrega seguramente deje estos botones para el momento de entrar el detalle en particular.

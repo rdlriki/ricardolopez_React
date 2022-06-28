@@ -1,19 +1,13 @@
 import './App.css';
-/* import Navbar from './components/Navbar';*/
-import Body from './components/Body'; 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import NavbarBoostrap from './components/NavbarBoostrap';
-import ItemListContainer from './components/ItemListContainer'
+import NavbarBoostrap from './components/NavBarBooster/NavbarBoostrap';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 function App() {
   return (
     <div>
         <NavbarBoostrap/>
-        <ItemListContainer greetings="Item List Container"/>
-{/*         <Navbar /> */}
-       {/*  <Body /> */}
-
-        
+        <ItemListContainer greetings="Elija nuestros productos"/>
     </div>
   );
 }

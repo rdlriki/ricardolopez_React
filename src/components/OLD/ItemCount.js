@@ -1,6 +1,5 @@
 import { useState } from "react";
 import Mensaje from "./Mensaje"
-import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import NoStock from './NoStock'
 import './ItemCount.css'

@@ -17,3 +17,6 @@ Comision 31220
 ## Clase 5: Catálogo con MAPS y Promises
 - 28/06/2022: Subo la quinta entrega de la clase. Aqui estoy adaptando el proyecto al uso de un JSON. Utilizando un Fetch (con un TimeOut de 2segundos), traigo la informacion que la levanta ItemListConteiner, que luego se la pasa a ItemList quien la acomoda en PROPS de acuerdo al nombre de cada item y por último, es Item quien genera las cards de Booster.
 En esta etapa deje los botones de sumar y restar, agregar carrito y reiniciar en cada CARDS. En una proxima entrega seguramente deje estos botones para el momento de entrar el detalle en particular.
+
+## Clase 6: Detalle de Producto
+- 3/07/2022: Subo la sexta entrega de la clase. En esta entrega, cambié el concepto de la pagina. Ahora es un e-commerce de muñecos/letras tejidos. Debjo del NAVBAR coloco el detalle de un producto. Arme 1 fila con 3 columnas: foto chiquita, foto grande, detalle del producto. En mi caso, el FETCH no me funciona si no agrego el HEADERS. Ademas, en el ItemDetailContainer, agregue un condicional para que, cuando se hace la lectura del JSON id===1, renderice el producto luego de ser leido. Sin este condicional, no me funcionaba.

@@ -7,51 +7,62 @@
 
 }
 
-.alinearCard{
-    align-items: center;
+.productoDescripcion{
+    width: 100%;
+    border-radius: 25px;
+    background-color: white;
+    border: 0.5px solid #a1a1a14f;
+    padding: 20px;
 }
 
-.cardBody{
-    text-align: center;
-}
-
-.botones{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content:center;
-    vertical-align: middle;
-}
-
-.botones Button{
-    border: 1px solid black;
-}
-
-.cantidad{
-    margin: 0px 10px 0px 10px;
-    font-size: 15px;
-
-}
-
-.cardText{
-    margin-top: 5px;
-    font-size: 15px;
-    height: 60px;
-}
-
-.cardPrecio{
-    margin: auto auto 5px auto;
-    font-size: 15px;
-}
-
-.carritoReiniciar{
+.productoDescripcion .container{
     display: flex;
     flex-direction: column;
-    width: 180px;
-    margin-bottom:10px;
+    align-items: center;
 }
 
-.carritoReiniciar Button{
-    margin-top:2px;    
-    border: 1px solid black;
+.cards .productoDescripcion h2.categoria{
+    font-size: 12px;
+    color: #e12257;
+}
+
+.cards .productoDescripcion h1{
+    font-size: 24px;
+    font-weight: bold;
+    height: 30px;
+}
+
+.cards .imagenPrincipal img{
+    width: 100%;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid #a1a1a14f;
+    box-shadow: 5px;
+    
+}
+
+.cards .productoDescripcion p{
+    font-size: 12px;
+    text-align: justify;
+    height: 65px;
+    padding-top: 5px;
+}
+
+.cards .productoDescripcion .precio{
+    font-size: 12px;
+    font-weight: bold;
+    color: #e12257;
+}
+
+.cards .productoDescripcion .stock{
+    font-size: 10px;
+    font-weight: bold;
+    color: black;
+}
+
+.cards .productoDescripcion .verMas{
+    margin-top: 2px;
+    background-color: gray !important;
+    border-color: gray !important ;
+    font-size: x-small !important;
 }

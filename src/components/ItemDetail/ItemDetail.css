@@ -1,0 +1,59 @@
+.imagenPrincipal img{
+    width: 100%;
+    border-radius: 25px;
+    background-color: white;
+    border: 0.5px solid #a1a1a14f; 
+}
+ul{
+    padding-left: 0;
+}
+ul li.imagenThumbail{
+    list-style: none;
+    
+}
+.imagenThumbail img{
+    width: 100%;
+    border-radius: 25px;
+    background-color: white;
+    border: 0.5px solid #a1a1a14f; 
+}
+.productoDescripcion{
+    width: 100%;
+    border-radius: 25px;
+    background-color: white;
+    border: 0.5px solid #a1a1a14f;
+    padding: 5px;
+}
+.productoDescripcion h2.categoria{
+    font-size: 20px;
+    color: #e12257;
+}
+.productoDescripcion h1{
+    font-size: 24px;
+    font-weight: bold;
+}
+.productoDescripcion p{
+    font-size: 12px;
+    text-align: justify;
+}
+.productoDescripcion .precio{
+    font-size: 32px;
+    font-weight: bold;
+    color: #e12257;
+}
+.productoDescripcion .card{
+    border: none;
+}
+
+.bodyCard{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.mensaje{
+    margin:auto;
+    width: auto;
+    height: 3px;
+    font-size: 15px;
+}

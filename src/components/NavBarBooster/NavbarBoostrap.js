@@ -11,7 +11,7 @@ function NavbarBoostrap() {
         <Container>
             <img 
                 alt=""
-                src={require('../Assets/Img/PyE.jpg')} 
+                src={require('../Assets/Img/Piguarte_Logo.png')} 
                 width="60"
                 height="auto"
                 className="d-inline-block align-top me-2 rounded shadow bg-white rounded"
@@ -20,20 +20,16 @@ function NavbarBoostrap() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#home">Pizzas y Empanadas</Nav.Link>
+                <Nav.Link href="#home">Tienda OnLine PiguArte</Nav.Link>
                 <Nav.Link href="#link">Promociones</Nav.Link>
-                <NavDropdown title="Cocina" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Pizzas</NavDropdown.Item>
+                <NavDropdown title="Productos" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Muñecas</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
-                    Empanadas
+                    Muñecos
                 </NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.3">Calzones</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Letras</NavDropdown.Item>
                 {/* <NavDropdown.Divider /> */}
-                <NavDropdown.Item href="#action/3.4">
-                    Bebidas
-                </NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href="#link">Limite Delivery</Nav.Link>
                 <Nav.Link href="#link">Contacto</Nav.Link>
             </Nav>
             </Navbar.Collapse>

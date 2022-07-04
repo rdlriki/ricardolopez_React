@@ -1,73 +1,61 @@
-import React from "react";
+/* Importo Css */
 import './Item.css';
-import { useState } from "react";
-import { Button, Card} from 'react-bootstrap';
-import NoStock from '../NoStock/NoStock'
 
-function Item(props) {
+/* Importo componentes */
+import React from "react";
+import { Button, Container, Row, Col } from 'react-bootstrap';
 
-    //console.log(props.producto)
+function Item(producto) {
 
-    const [ numero , setNumero ] = useState( 1 )
-
-    const sumar = () => {
-        if (numero < props.stock) {
-            setNumero ( numero+1 )
-        } 
-    }
-    
-    const restar = () => {
-        if (numero > 0){
-            setNumero ( numero-1 )
-        }
-    }
-
-    const reiniciar = () => {
-        setNumero ( 1 )
-    }
+    //console.log(producto.producto)
 
     return (
         <div className="cards">
-        
-            <Card className="alinearCard">
-            <Card.Header>{ props.producto }</Card.Header>
-            <Card.Body className="cardBody">
-                <Card.Title className='cardTitle'>Unidades: { props.stock }</Card.Title>
-                <img 
-                    alt="{props.producto}"
-                    src={props.img}
-                    //src={require("../Assets/Img/Pizza_Muzzarella.jpg")}
-                    //src={require('../Assets/Img/$(props.img)')}
-                    height="100"
-                    width="auto"
-                    className="d-inline-block align-top me-2 rounded shadow bg-white rounded"
-                />{' '}
-                <Card.Text className='cardText'>
-                {props.descripcion}
-                </Card.Text>
-                <Card.Text className='cardPrecio'>
-                Grande: $ {props.precioG} / Chica: $ {props.precioC}
-                </Card.Text>
-                <div className="botones">
-                    <Button variant="secondary" size="sm" onClick={restar} >-</Button>
-                    <p className="cantidad">{ numero }</p>
-                    <Button variant="secondary" size="sm" onClick={sumar} >+</Button>
-                    
-                </div>
-                <NoStock numero={numero} stock={props.stock}></NoStock>
-            </Card.Body>
-                <div className="carritoReiniciar">
-                    <Button variant="danger" >Agregar al Carrito</Button>
-                    <Button variant="primary" onClick={reiniciar}>Eliminar items</Button>
-                </div>
-            </Card>
+            <Container>
+                <Row>
+                    <Col className='productoDescripcion'>
 
+                        {/* Genero 7 filas para mostrar informacion del producto */}
+                        <Container className="container">   
+                            <Row>
+                                <Col>   {/* Muesto la categoría */}
+                                    <h2 className='categoria'>{producto.categoria}</h2>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>   {/* Muestro el nombre del producto */}
+                                    <h1>{producto.producto}</h1>
+                                </Col>
+                            </Row>
+                            <Row>   {/* Muestro la imagen */}
+                                <Col className='imagenPrincipal'>
+                                    <img src={require(`../Assets/Img/${producto.img1}`)} alt={producto.producto} style={{ width: 'auto', height: '150px' }} />
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>   {/* Muestro una breve descripcion */}
+                                    <p>{producto.descripcion}</p>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>   {/* Muestro el precio */}
+                                    <div className='precio'>Precio: ${producto.precio}</div>
+                                </Col>
+                            </Row>
+                            <Row>
+                                <Col>   {/* Muestro el stock */}
+                                    <div className='stock'>Stock: {producto.stock}</div>
+                                </Col>
+                            </Row>
+                            <Row>   {/* Boton para ver mas */}
+                                <Button className="verMas" size="sm">Ver mas</Button>
+                            </Row>
+                        </Container>
+                    </Col>
+                </Row>
+            </Container>
         </div>
-/*     <div className='card'>
-        <h4>Producto</h4>
-        <p>Descripcion</p>
-    </div> */
-    ) 
+    )
 }
 
 export default Item;

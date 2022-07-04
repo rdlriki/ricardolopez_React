@@ -1,24 +1,27 @@
+/* Importo componentes */
 import React from "react";
 import Item from '../Item/Item'
-import { Container, Row} from 'react-bootstrap';
+import { Container, Row } from 'react-bootstrap';
 
-function ItemList({listadoProductos}) {
+function ItemList({ listadoProductos }) {
 
-/*     console.log('listadoProductos',listadoProductos)
- */
+    /*     console.log('listadoProductos',listadoProductos)
+     */
     return (
 
         <Container fluid >
+
             <Row>
-                {listadoProductos.map((comida) => <Item 
-                    producto={comida.producto} 
-                    stock={comida.stock} 
-                    precioG={comida.precioG} 
-                    precioC={comida.precioC} 
-                    descripcion={comida.descripcion} 
-                    key={comida.id} 
-                    img={comida.img} 
-                    categoria={comida.categoria} /> )}
+                {listadoProductos.map((product) => <Item
+                    key={product.id}
+                    producto={product.producto}
+                    descripcion={product.descripcion}
+                    detalle={product.detalle}
+                    stock={product.stock}
+                    precio={product.precio}
+                    img1={product.img1}
+                    img2={product.img2}
+                    categoria={product.categoria} />)}
             </Row>
         </Container>
     )

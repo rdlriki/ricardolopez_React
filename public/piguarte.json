@@ -1,61 +1,157 @@
-[{
-    "producto": "Pizza Muzzarella",
-    "stock": 5,
-    "precioG": 1500,
-    "precioC": 900,
-    "descripcion": "Salsa de tomate y queso Muzzarella",
-    "id": 1,
-    "img": "https://quem.com.ar/wp-content/uploads/2018/05/Pizza-e1584547627773.jpg",
-    "categoria": "Pizza"
-},
-{
-    "producto": "Pizza Especial",
-    "stock": 3,
-    "precioG": 1800,
-    "precioC": 1200,
-    "descripcion": "Salsa de tomate, queso Muzzarella, Jamón y Morrones",
-    "id": 2,
-    "img": "https://locosxlaparrilla.com/wp-content/uploads/2015/02/Receta-recetas-locos-x-la-parrilla-locosxlaparrilla-Receta-pizza-pizza-receta-pizza-mozzarella-jamon-morrones-pizza-mozzarella-jamon-morrones-2.jpg",
-    "categoria": "Pizza"
-},
-{
-    "producto": "Pizza 4 quesos",
-    "stock": 4,
-    "precioG": 1750,
-    "precioC": 1300,
-    "descripcion": "Salsa de tomate, queso Muzzarella, roquefort, parmesano, cuartirolo",
-    "id": 3,
-    "img": "https://imag.bonviveur.com/foto-portada-pizza-cuatro-quesos.jpg",
-    "categoria": "Pizza"
-},
-{
-    "producto": "Fugazzeta rellena",
-    "stock": 5,
-    "precioG": 1900,
-    "precioC": 1200,
-    "descripcion": "Fugazzeta (cebolla y Muzzarella) rellena de Jamon y Queso Muzzarella",
-    "id": 4,
-    "img": "https://tucoweb.info/wp-content/uploads/2020/08/FR2.jpg",
-    "categoria": "Pizza"
-},
-{
-    "producto": "Pizza Napolitana",
-    "stock": 5,
-    "precioG": 1850,
-    "precioC": 1300,
-    "descripcion": "Salsa de tomate, queso Muzzarella, tomate fresco en rodajas y ajo",
-    "id": 5,
-    "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/664/252/products/a2408019-e602-43f0-8495-1e081f54cf59-97011d32d06882ec1016276673747101-1024-1024.jpeg",
-    "categoria": "Pizza"
-},
-{
-    "producto": "Pizza Calabresa",
-    "stock": 5,
-    "precioG": 2000,
-    "precioC": 200,
-    "descripcion": "Salsa de tomate, rodajas de Longaniza",
-    "id": 6,
-    "img": "https://d2r9epyceweg5n.cloudfront.net/stores/001/312/763/products/calabresa1-cd5a0176c75eba984916272894881349-1024-1024.jpg",
-    "categoria": "Pizza"
-}
+[
+    {
+        "id": 1,
+        "producto": "Fama",
+        "descripcion": "Hermosa muñeca tejida en hilo 100% de algodón, rellena de vellón siliconado",
+        "detalle": "Hermosa muñeca tejida en hilo 100% de algodón, rellena de vellón siliconado. Ojos bordados. Ropa: Vestido tejido y ojotas tejidas. Remera, pollera de jins, zapatillas deportivas. Accesorios: Vincha.Tu muñequita para vestir, peinar y jugar todo el día!.",
+        "stock": 5,
+        "precio": 2800,
+        "img1": "Fama_1.jpg",
+        "img2": "Fama_2.jpg",
+        "categoria": "Muñecas"
+    },
+
+    {
+        "id": 2,
+        "producto": "Jazmín",
+        "descripcion": "Hermosa muñeca tejida en hilo 100% de algodón, rellena de vellón siliconado",
+        "detalle": "Hermosa muñeca tejida en hilo 100% de algodón, rellena de vellón siliconado. Ojos de seguridad. Opcional se pueden pedir tejidos. Ropa: Jardinero, sombrero, bufanda y zapatitos.",
+        "stock": 2,
+        "precio": 2500,
+        "img1": "Jazmin_1.jpg",
+        "img2": "Jazmin_2.jpg",
+        "categoria": "Muñecas"
+    },
+
+    {
+        "id": 3,
+        "producto": "Hipopótamo",
+        "descripcion": "Muñeco Hipopótamo",
+        "detalle": "Tierno Hipopótamo tejido a crochet con hilo 100 % algodón. Relleno con vellón siliconado. Ojos de seguridad.",
+        "stock": 3,
+        "precio": 2100,
+        "img1": "Hipopotamo_1.jpg",
+        "img2": "Hipopotamo_2.jpg",
+        "categoria": "Muñecos"
+    },
+
+    {
+        "id": 4,
+        "producto": "León Leoncio",
+        "descripcion": "Muñeco León",
+        "detalle": "Simpatico León tejido en hilo 100% de algodón. Relleno de vellón siliconado. Ojos de seguridad.",
+        "stock": 3,
+        "precio": 1900,
+        "img1": "Leon_Leoncio_1.jpg",
+        "img2": "Leon_Leoncio_1.jpg",
+        "categoria": "Muñecos"
+    },
+
+    {
+        "id": 5,
+        "producto": "León Lyon",
+        "descripcion": "Muñeco León",
+        "detalle": "Hermoso León con melena tejido integramente en hilo 100% algodón y relleno de vellón siliconado. Ojos de seguridad. Opcional ojos tejidos.",
+        "stock": 8,
+        "precio": 1950,
+        "img1": "Leon_Lyon_1.jpg",
+        "img2": "Leon_Lyon_2.jpg",
+        "categoria": "Muñecos"
+    },
+
+    {
+        "id": 6,
+        "producto": "Mono Mike",
+        "descripcion": "Muñeco Mono",
+        "detalle": "Simpático mono coludo tejido integramente en hilo 100% algodón y relleno de vellón siliconado. Ojos de seguridad. Opcional ojos tejidos.",
+        "stock": 3,
+        "precio": 2100,
+        "img1": "Mono_Mike_1.jpg",
+        "img2": "Mono_Mike_2.jpg",
+        "categoria": "Muñecos"
+    },
+
+    {
+        "id": 7,
+        "producto": "Osito Nórdico",
+        "descripcion": "Muñeco Oso",
+        "detalle": "Osito tejido en hilo de 100% de algodón. Relleno de vellón siliconado. Ojos bordados. Ropa: jardinero y bufanda",
+        "stock": 3,
+        "precio": 2700,
+        "img1": "Oso_Nordico_1.jpg",
+        "img2": "Oso_Nordico_2.jpg",
+        "categoria": "Muñecos"
+    },
+
+    {
+        "id": 8,
+        "producto": "Ovejita Dolly",
+        "descripcion": "Muñeco Oveja",
+        "detalle": "Ovejita realizada en hilo 100% de algodón, rellena de vellón siliconado. Ojos de seguridad, opcional se pueden pedir tejidos.Accesorios Moñitos. El modelo original es sin moños.",
+        "stock": 3,
+        "precio": 2900,
+        "img1": "Ovejita_Dolly_1.jpg",
+        "img2": "Ovejita_Dolly_2.jpg",
+        "categoria": "Muñecos"
+    },
+
+    {
+        "id": 9,
+        "producto": "Torito Toribio",
+        "descripcion": "Muñeco Torito",
+        "detalle": "Torito Toribio tejido a crochet con hilo 100 % algodón. Relleno con vellón siliconado. Ojos de seguridad.",
+        "stock": 8,
+        "precio": 2900,
+        "img1": "Torito_Toribio_1.jpg",
+        "img2": "Torito_Toribio_2.jpg",
+        "categoria": "Muñecos"
+    },
+
+    {
+        "id": 10,
+        "producto": "Cartel de 4 letras",
+        "descripcion": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado",
+        "detalle": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado. Algunas letras incluyen alambre forrado para dar forma. Se puede pedir sin alambre. Tamaño estándar: 12cm de alto x 10cm de ancho aproximadamente de acuerdo con la letra. Grosor de cada letra 2cms aproximadamente. Variantes de tamaño: Consultar x otros tamaños. Libre elección de diseños y colores. Sujetador en parte trasera que permite desplazar y acomodar las letras sobre el cordón. Incluye cordón blanco para que resalten las letras. Se puede pedir en otro color. No incluye accesorios.",
+        "stock": 5,
+        "precio": 1000,
+        "img1": "Letras_x4_1.jpg",
+        "img2": "Letras_x4_2.jpg",
+        "categoria": "Letras"
+    },
+
+    {
+        "id": 11,
+        "producto": "Cartel de 5 letras",
+        "descripcion": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado",
+        "detalle": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado. Algunas letras incluyen alambre forrado para dar forma. Se puede pedir sin alambre. Tamaño estándar: 12cm de alto x 10cm de ancho aproximadamente de acuerdo con la letra. Grosor de cada letra 2cms aproximadamente. Variantes de tamaño: Consultar x otros tamaños. Libre elección de diseños y colores. Sujetador en parte trasera que permite desplazar y acomodar las letras sobre el cordón. Incluye cordón blanco para que resalten las letras. Se puede pedir en otro color. No incluye accesorios.",
+        "stock": 5,
+        "precio": 1250,
+        "img1": "Letras_x5_1.jpg",
+        "img2": "Letras_x5_2.jpg",
+        "categoria": "Letras"
+    },
+
+    {
+        "id": 12,
+        "producto": "Cartel de 6 letras",
+        "descripcion": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado",
+        "detalle": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado. Algunas letras incluyen alambre forrado para dar forma. Se puede pedir sin alambre. Tamaño estándar: 12cm de alto x 10cm de ancho aproximadamente de acuerdo con la letra. Grosor de cada letra 2cms aproximadamente. Variantes de tamaño: Consultar x otros tamaños. Libre elección de diseños y colores. Sujetador en parte trasera que permite desplazar y acomodar las letras sobre el cordón. Incluye cordón blanco para que resalten las letras. Se puede pedir en otro color. No incluye accesorios.",
+        "stock": 4,
+        "precio": 1499,
+        "img1": "Letras_x6_1.jpg",
+        "img2": "Letras_x6_2.jpg",
+        "categoria": "Letras"
+    },
+
+    {
+        "id": 13,
+        "producto": "Cartel de 7 letras",
+        "descripcion": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado",
+        "detalle": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado. Algunas letras incluyen alambre forrado para dar forma. Se puede pedir sin alambre. Tamaño estándar: 12cm de alto x 10cm de ancho aproximadamente de acuerdo con la letra. Grosor de cada letra 2cms aproximadamente. Variantes de tamaño: Consultar x otros tamaños. Libre elección de diseños y colores. Sujetador en parte trasera que permite desplazar y acomodar las letras sobre el cordón. Incluye cordón blanco para que resalten las letras. Se puede pedir en otro color. No incluye accesorios.",
+        "stock": 6,
+        "precio": 1750,
+        "img1": "Letras_x6_1.jpg",
+        "img2": "Letras_x6_2.jpg",
+        "categoria": "Letras"
+    }
 ]

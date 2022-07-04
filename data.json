@@ -5,57 +5,7 @@
     "precioC": 900,
     "descripcion": "Salsa de tomate y queso Muzzarella",
     "id": 1,
-    "img": "https://quem.com.ar/wp-content/uploads/2018/05/Pizza-e1584547627773.jpg",
-    "categoria": "Pizza"
-},
-{
-    "producto": "Pizza Especial",
-    "stock": 3,
-    "precioG": 1800,
-    "precioC": 1200,
-    "descripcion": "Salsa de tomate, queso Muzzarella, Jamón y Morrones",
-    "id": 2,
-    "img": "https://locosxlaparrilla.com/wp-content/uploads/2015/02/Receta-recetas-locos-x-la-parrilla-locosxlaparrilla-Receta-pizza-pizza-receta-pizza-mozzarella-jamon-morrones-pizza-mozzarella-jamon-morrones-2.jpg",
-    "categoria": "Pizza"
-},
-{
-    "producto": "Pizza 4 quesos",
-    "stock": 4,
-    "precioG": 1750,
-    "precioC": 1300,
-    "descripcion": "Salsa de tomate, queso Muzzarella, roquefort, parmesano, cuartirolo",
-    "id": 3,
-    "img": "https://imag.bonviveur.com/foto-portada-pizza-cuatro-quesos.jpg",
-    "categoria": "Pizza"
-},
-{
-    "producto": "Fugazzeta rellena",
-    "stock": 5,
-    "precioG": 1900,
-    "precioC": 1200,
-    "descripcion": "Fugazzeta (cebolla y Muzzarella) rellena de Jamon y Queso Muzzarella",
-    "id": 4,
-    "img": "https://tucoweb.info/wp-content/uploads/2020/08/FR2.jpg",
-    "categoria": "Pizza"
-},
-{
-    "producto": "Pizza Napolitana",
-    "stock": 5,
-    "precioG": 1850,
-    "precioC": 1300,
-    "descripcion": "Salsa de tomate, queso Muzzarella, tomate fresco en rodajas y ajo",
-    "id": 5,
-    "img": "https://d3ugyf2ht6aenh.cloudfront.net/stores/001/664/252/products/a2408019-e602-43f0-8495-1e081f54cf59-97011d32d06882ec1016276673747101-1024-1024.jpeg",
-    "categoria": "Pizza"
-},
-{
-    "producto": "Pizza Calabresa",
-    "stock": 5,
-    "precioG": 2000,
-    "precioC": 200,
-    "descripcion": "Salsa de tomate, rodajas de Longaniza",
-    "id": 6,
-    "img": "https://d2r9epyceweg5n.cloudfront.net/stores/001/312/763/products/calabresa1-cd5a0176c75eba984916272894881349-1024-1024.jpg",
+    "img": "Pizza_Muzzarella.jpg",
     "categoria": "Pizza"
 }
 ]

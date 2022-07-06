@@ -2,7 +2,7 @@
 import './ItemDetail.css';
 
 /* Importo componentes */
-import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { Carousel, Button, Card, Col, Container, Row } from 'react-bootstrap';
 import React, { useState } from 'react';
 import Mensaje from '../Mensaje/Mensaje';
 
@@ -34,29 +34,45 @@ function ItemDetail(props) {
         setNumero(1)
     }
 
+    /*     interval={2000}
+     */
     return (
         <div>
             <Container>
                 {/* Genero 3 columnas: fotito chiquita, foto grande principal, info del producto */}
                 <Row>
-                    {/* Primer columna: fotitos */}
-                    <Col md={2}>
-                        <ul>
-                            <li className='imagenThumbail'>
-                                <img src={require(`../Assets/Img/${producto.img2}`)} alt={producto.producto} style={{ width: '100%' }} />
-                            </li>
-                        </ul>
+
+                    <Col lg>
+                        <Carousel variant="dark" className='imagenPrincipal'>
+                            <Carousel.Item className='imagenPrincipal' >
+                                <img
+                                    className="d-block"
+                                    src={require(`../Assets/Img/${producto.img1}`)}
+                                    alt="{producto.descripcion}"
+                                />
+                                <Carousel.Caption >
+                                    <h3>{producto.producto}</h3>
+                                    <p>{producto.descripcion}</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                            <Carousel.Item  >
+                                <img
+                                    className="d-block"
+                                    src={require(`../Assets/Img/${producto.img2}`)}
+                                    alt="{producto.descripcion}"
+                                />
+
+                                <Carousel.Caption>
+                                    <h3>{producto.producto}</h3>
+                                    <p>{producto.descripcion}</p>
+                                </Carousel.Caption>
+                            </Carousel.Item>
+                        </Carousel>
                     </Col>
 
-                    {/* Segunda columna: Foto grande */}
-                    <Col md={6}>
-                        <div className='imagenPrincipal'>
-                            <img src={require(`../Assets/Img/${producto.img1}`)} alt={producto.producto} style={{ width: '100%' }} />
-                        </div>
-                    </Col>
 
                     {/* Tercera columna: Datos del producto */}
-                    <Col className='productoDescripcion'>
+                    <Col className='productoDescripcion' lg>
                         <Container>
 
                             {/* Aca hago 5 filas para mostrar informacion */}
@@ -83,24 +99,26 @@ function ItemDetail(props) {
                                     <div className='precio'>Precio: ${producto.precio}</div>
                                 </Col>
                             </Row>
-                            
+
                             <Row className="justify-content-center">    {/* Botoneras */}
                                 <Col xs={7}>
                                     <Card>
                                         <Card.Body className='bodyCard'>
-                                            <div class="input-group mb-1 ">
-                                                <button onClick={restar} className="input-group-text">-</button>
-                                                <input type="text" class="form-control" value={numero} />
-                                                <button onClick={sumar} className="input-group-text">+</button>
+                                            <div className="input-group mb-1 ">
+                                                <Button onClick={restar} className="input-group-text">-</Button>
+                                                <input type="text" className="form-control" value={numero} />
+                                                <Button onClick={sumar} className="input-group-text">+</Button>
                                             </div>
                                             <Button className="buttonCarrito">Agregar al carrito</Button>
                                         </Card.Body>
                                         <Button variant="primary" className="buttonRestart" onClick={reiniciar}>Reiniciar</Button>
-                                        <div className='mensaje'>
-                                            <Mensaje numero={numero} stock={producto.stock}></Mensaje>
-                                        </div>
+
                                     </Card>
+                                    <div className='mensaje'>
+                                        <Mensaje numero={numero} stock={producto.stock}></Mensaje>
+                                    </div>
                                 </Col>
+
                             </Row>
                         </Container>
                     </Col>

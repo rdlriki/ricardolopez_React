@@ -14,6 +14,7 @@ function ItemList({ listadoProductos }) {
             <Row>
                 {listadoProductos.map((product) => <Item
                     key={product.id}
+                    id={product.id}
                     producto={product.producto}
                     descripcion={product.descripcion}
                     detalle={product.detalle}

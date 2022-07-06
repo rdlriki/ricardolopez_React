@@ -1,31 +1,30 @@
 .imagenPrincipal img{
-    width: 100%;
+    margin: auto;
     border-radius: 25px;
-    background-color: white;
-    border: 0.5px solid #a1a1a14f; 
+    height: 450px;
 }
-ul{
-    padding-left: 0;
+
+.imagenPrincipal h3{
+    color: #2744d8;
+    text-shadow: 1px 1px white;
 }
-ul li.imagenThumbail{
-    list-style: none;
-    
+
+.imagenPrincipal p{
+    color: rgb(247, 93, 191);
+    text-shadow: 1px 0.5px black;
 }
-.imagenThumbail img{
-    width: 100%;
-    border-radius: 25px;
-    background-color: white;
-    border: 0.5px solid #a1a1a14f; 
-}
+
 .productoDescripcion{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     border-radius: 25px;
     background-color: white;
     border: 0.5px solid #a1a1a14f;
-    padding: 5px;
 }
+
 .productoDescripcion h2.categoria{
-    font-size: 20px;
+    font-size: 15px;
     color: #e12257;
 }
 .productoDescripcion h1{
@@ -33,11 +32,11 @@ ul li.imagenThumbail{
     font-weight: bold;
 }
 .productoDescripcion p{
-    font-size: 12px;
+    font-size: 15px;
     text-align: justify;
 }
 .productoDescripcion .precio{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     color: #e12257;
 }
@@ -51,9 +50,14 @@ ul li.imagenThumbail{
     padding: 5px;
 }
 
-.mensaje{
+.mensaje {
+    display: flex;
+    justify-content: center;
+}
+
+.mensaje p{
     margin:auto;
     width: auto;
-    height: 3px;
-    font-size: 15px;
+    height: 2px;
+    font-size: 10px;
 }

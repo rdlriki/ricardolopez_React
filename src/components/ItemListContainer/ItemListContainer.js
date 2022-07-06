@@ -23,9 +23,9 @@ function ItemListContainer({ greetings }) {
 /*             console.log("arriba")
  */            setTimeout(
                 () => {
-                    fetch('piguarte.json',
-/*                     fetch('../piguarte.json',
- */                        {
+/*                     fetch('piguarte.json',
+ */                    fetch('../piguarte.json',
+                        {
                             method: "GET",
                             headers:
                             {
@@ -49,9 +49,9 @@ function ItemListContainer({ greetings }) {
 /*             console.log("aca")
  */            setTimeout(
                 () => {
-                    fetch('piguarte.json',
-/*                     fetch('../piguarte.json',
- */                        {
+/*                     fetch('piguarte.json',
+ */                    fetch('../piguarte.json',
+                        {
                             method: "GET",
                             headers:
                             {

@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/ricardolopez_React/static/css/main.e2cf4b1d.css",
-    "main.js": "/ricardolopez_React/static/js/main.67c861b6.js",
+    "main.css": "/ricardolopez_React/static/css/main.8f292cd4.css",
+    "main.js": "/ricardolopez_React/static/js/main.efb16542.js",
     "static/js/787.1e45d1bf.chunk.js": "/ricardolopez_React/static/js/787.1e45d1bf.chunk.js",
     "static/media/Converted documents.zip": "/ricardolopez_React/static/media/Converted documents.e97aafe5ef70c872b07e.zip",
+    "static/media/Coming_soon.jpg": "/ricardolopez_React/static/media/Coming_soon.2c2770f5fe658f82e21b.jpg",
     "static/media/Converted documents (1).zip": "/ricardolopez_React/static/media/Converted documents (1).08d651201c16fd8f0b83.zip",
     "static/media/Converted documents (2).zip": "/ricardolopez_React/static/media/Converted documents (2).08d651201c16fd8f0b83.zip",
     "static/media/Converted documents (3).zip": "/ricardolopez_React/static/media/Converted documents (3).4f792eea30eb260c717f.zip",
@@ -66,12 +67,12 @@
     "static/media/Leon_Leoncio_2.webp": "/ricardolopez_React/static/media/Leon_Leoncio_2.9a2287ba1df5da1e44ea.webp",
     "static/media/cartImg.png": "/ricardolopez_React/static/media/cartImg.bc9d324fa206b458abd5.png",
     "index.html": "/ricardolopez_React/index.html",
-    "main.e2cf4b1d.css.map": "/ricardolopez_React/static/css/main.e2cf4b1d.css.map",
-    "main.67c861b6.js.map": "/ricardolopez_React/static/js/main.67c861b6.js.map",
+    "main.8f292cd4.css.map": "/ricardolopez_React/static/css/main.8f292cd4.css.map",
+    "main.efb16542.js.map": "/ricardolopez_React/static/js/main.efb16542.js.map",
     "787.1e45d1bf.chunk.js.map": "/ricardolopez_React/static/js/787.1e45d1bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2cf4b1d.css",
-    "static/js/main.67c861b6.js"
+    "static/css/main.8f292cd4.css",
+    "static/js/main.efb16542.js"
   ]
 }

@@ -25,14 +25,14 @@ function ItemListContainer({ greetings }) {
                 () => {
                     /* fetch('piguarte.json', */
                     fetch('piguarte.json',
-                        {
+/*                         {
                             method: "GET",
                             headers:
                             {
                                 'Content-Type': 'application/json',
                                 'Accept': 'application/son'
                             }
-                        }
+                        } */
                     )
                         .then(resp => resp.json())
                         .then(dataFiltrada => setProductos(dataFiltrada.filter(product => product.categoria === catid)))
@@ -51,14 +51,14 @@ function ItemListContainer({ greetings }) {
                 () => {
                     /* fetch('piguarte.json', */
                     fetch('piguarte.json',
-                        {
+/*                         {
                             method: "GET",
                             headers:
                             {
                                 'Content-Type': 'application/json',
                                 'Accept': 'application/son'
                             }
-                        }
+                        } */
                     )
                         .then(resp => resp.json())
                         .then(data => setProductos(data))

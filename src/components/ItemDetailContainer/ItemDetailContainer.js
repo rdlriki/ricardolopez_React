@@ -21,8 +21,8 @@ function ItemDetailContainer() {
 
             setTimeout(
                 () => {
-/*                     fetch('piguarte.json',
- */                    fetch('../piguarte.json',
+                   /*  fetch('piguarte.json', */
+                    fetch('../piguarte.json',
 
                         {
                             method: "GET",
@@ -34,8 +34,8 @@ function ItemDetailContainer() {
                         }
                     )
                         .then(resp => resp.json())
-                        .then(data => { 
-                            setProducto(data.filter( i => i.id === productoid))
+                        .then(data => setProducto(data.filter( i => i.id === productoid)))
+                        .finally( ()=> {
                             setInfoCargada(true)
                             setIsLoading(false)
                         }) 

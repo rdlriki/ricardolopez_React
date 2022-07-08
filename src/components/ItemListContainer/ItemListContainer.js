@@ -23,8 +23,8 @@ function ItemListContainer({ greetings }) {
 /*             console.log("arriba")
  */            setTimeout(
                 () => {
-/*                     fetch('piguarte.json',
- */                    fetch('../piguarte.json',
+                    /* fetch('piguarte.json', */
+                    fetch('../piguarte.json',
                         {
                             method: "GET",
                             headers:
@@ -35,11 +35,11 @@ function ItemListContainer({ greetings }) {
                         }
                     )
                         .then(resp => resp.json())
-                        .then(dataFiltrada => {
-                            setProductos(dataFiltrada.filter(product => product.categoria === catid))
-                            setIsLoading(false)
+                        .then(dataFiltrada => setProductos(dataFiltrada.filter(product => product.categoria === catid)))
+                        .finally( ()=> {
                             setInfoCargada(true)
-                        })
+                            setIsLoading(false)
+                        }) 
                         .catch(err => console.log(err))
                         
                 }, 1000)
@@ -49,8 +49,8 @@ function ItemListContainer({ greetings }) {
 /*             console.log("aca")
  */            setTimeout(
                 () => {
-/*                     fetch('piguarte.json',
- */                    fetch('../piguarte.json',
+                    /* fetch('piguarte.json', */
+                    fetch('../piguarte.json',
                         {
                             method: "GET",
                             headers:
@@ -61,10 +61,10 @@ function ItemListContainer({ greetings }) {
                         }
                     )
                         .then(resp => resp.json())
-                        .then(data => {
-                            setProductos(data)
-                            setIsLoading(false)
+                        .then(data => setProductos(data))
+                        .finally( ()=> {
                             setInfoCargada(true)
+                            setIsLoading(false)
                         })
                         .catch(err => console.log(err))
                 }, 1000)

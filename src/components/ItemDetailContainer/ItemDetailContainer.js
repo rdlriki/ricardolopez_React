@@ -22,16 +22,16 @@ function ItemDetailContainer() {
             setTimeout(
                 () => {
                    /*  fetch('piguarte.json', */
-                    fetch('piguarte.json',
+                    fetch('../piguarte.json',
 
-/*                         {
+                        {
                             method: "GET",
                             headers:
                             {
                                 'Content-Type': 'application/json',
                                 'Accept': 'application/son'
                             }
-                        } */
+                        }
                     )
                         .then(resp => resp.json())
                         .then(data => setProducto(data.filter( i => i.id === productoid)))

@@ -22,7 +22,7 @@ function ItemDetailContainer() {
             setTimeout(
                 () => {
                    /*  fetch('piguarte.json', */
-                    fetch('../piguarte.json',
+                    fetch('piguarte.json',
 
                         {
                             method: "GET",

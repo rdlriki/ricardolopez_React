@@ -24,7 +24,7 @@ function ItemListContainer({ greetings }) {
  */            setTimeout(
                 () => {
                     /* fetch('piguarte.json', */
-                    fetch('../piguarte.json',
+                    fetch('piguarte.json',
                         {
                             method: "GET",
                             headers:
@@ -50,7 +50,7 @@ function ItemListContainer({ greetings }) {
  */            setTimeout(
                 () => {
                     /* fetch('piguarte.json', */
-                    fetch('../piguarte.json',
+                    fetch('piguarte.json',
                         {
                             method: "GET",
                             headers:

@@ -1,0 +1,158 @@
+export const piguarte=
+    [
+        {
+            "id": "1",
+            "producto": "Fama",
+            "descripcion": "Hermosa muñeca tejida en hilo 100% de algodón, rellena de vellón siliconado",
+            "detalle": "Hermosa muñeca tejida en hilo 100% de algodón, rellena de vellón siliconado. Ojos bordados. Ropa: Vestido tejido y ojotas tejidas. Remera, pollera de jins, zapatillas deportivas. Accesorios: Vincha.Tu muñequita para vestir, peinar y jugar todo el día!.",
+            "stock": 5,
+            "precio": 2800,
+            "img1": "Fama_1.jpg",
+            "img2": "Fama_2.jpg",
+            "categoria": "Muniecas"
+        },
+
+        {
+            "id": "2",
+            "producto": "Jazmín",
+            "descripcion": "Hermosa muñeca tejida en hilo 100% de algodón, rellena de vellón siliconado",
+            "detalle": "Hermosa muñeca tejida en hilo 100% de algodón, rellena de vellón siliconado. Ojos de seguridad. Opcional se pueden pedir tejidos. Ropa: Jardinero, sombrero, bufanda y zapatitos.",
+            "stock": 2,
+            "precio": 2500,
+            "img1": "Jazmin_1.jpg",
+            "img2": "Jazmin_2.jpg",
+            "categoria": "Muniecas"
+        },
+
+        {
+            "id": "3",
+            "producto": "Hipopótamo",
+            "descripcion": "Muñeco Hipopótamo",
+            "detalle": "Tierno Hipopótamo tejido a crochet con hilo 100 % algodón. Relleno con vellón siliconado. Ojos de seguridad.",
+            "stock": 3,
+            "precio": 2100,
+            "img1": "Hipopotamo_1.jpg",
+            "img2": "Hipopotamo_2.jpg",
+            "categoria": "Muniecos"
+        },
+
+        {
+            "id": "4",
+            "producto": "León Leoncio",
+            "descripcion": "Muñeco León",
+            "detalle": "Simpatico León tejido en hilo 100% de algodón. Relleno de vellón siliconado. Ojos de seguridad.",
+            "stock": 3,
+            "precio": 1900,
+            "img1": "Leon_Leoncio_1.jpg",
+            "img2": "Leon_Leoncio_1.jpg",
+            "categoria": "Muniecos"
+        },
+
+        {
+            "id": "5",
+            "producto": "León Lyon",
+            "descripcion": "Muñeco León",
+            "detalle": "Hermoso León con melena tejido integramente en hilo 100% algodón y relleno de vellón siliconado. Ojos de seguridad. Opcional ojos tejidos.",
+            "stock": 8,
+            "precio": 1950,
+            "img1": "Leon_Lyon_1.jpg",
+            "img2": "Leon_Lyon_2.jpg",
+            "categoria": "Muniecos"
+        },
+
+        {
+            "id": "6",
+            "producto": "Mono Mike",
+            "descripcion": "Muñeco Mono",
+            "detalle": "Simpático mono coludo tejido integramente en hilo 100% algodón y relleno de vellón siliconado. Ojos de seguridad. Opcional ojos tejidos.",
+            "stock": 3,
+            "precio": 2100,
+            "img1": "Mono_Mike_1.jpg",
+            "img2": "Mono_Mike_2.jpg",
+            "categoria": "Muniecos"
+        },
+
+        {
+            "id": "7",
+            "producto": "Osito Nórdico",
+            "descripcion": "Muñeco Oso",
+            "detalle": "Osito tejido en hilo de 100% de algodón. Relleno de vellón siliconado. Ojos bordados. Ropa: jardinero y bufanda",
+            "stock": 3,
+            "precio": 2700,
+            "img1": "Oso_Nordico_1.jpg",
+            "img2": "Oso_Nordico_2.jpg",
+            "categoria": "Muniecos"
+        },
+
+        {
+            "id": "8",
+            "producto": "Ovejita Dolly",
+            "descripcion": "Muñeco Oveja",
+            "detalle": "Ovejita realizada en hilo 100% de algodón, rellena de vellón siliconado. Ojos de seguridad, opcional se pueden pedir tejidos.Accesorios Moñitos. El modelo original es sin moños.",
+            "stock": 3,
+            "precio": 2900,
+            "img1": "Ovejita_Dolly_1.jpg",
+            "img2": "Ovejita_Dolly_2.jpg",
+            "categoria": "Muniecos"
+        },
+
+        {
+            "id": "9",
+            "producto": "Torito Toribio",
+            "descripcion": "Muñeco Torito",
+            "detalle": "Torito Toribio tejido a crochet con hilo 100 % algodón. Relleno con vellón siliconado. Ojos de seguridad.",
+            "stock": 8,
+            "precio": 2900,
+            "img1": "Torito_Toribio_1.jpg",
+            "img2": "Torito_Toribio_2.jpg",
+            "categoria": "Muniecos"
+        },
+
+        {
+            "id": "10",
+            "producto": "Cartel de 4 letras",
+            "descripcion": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado",
+            "detalle": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado. Algunas letras incluyen alambre forrado para dar forma. Se puede pedir sin alambre. Tamaño estándar: 12cm de alto x 10cm de ancho aproximadamente de acuerdo con la letra. Grosor de cada letra 2cms aproximadamente. Variantes de tamaño: Consultar x otros tamaños. Libre elección de diseños y colores. Sujetador en parte trasera que permite desplazar y acomodar las letras sobre el cordón. Incluye cordón blanco para que resalten las letras. Se puede pedir en otro color. No incluye accesorios.",
+            "stock": 5,
+            "precio": 1000,
+            "img1": "Letras_x4_1.jpg",
+            "img2": "Letras_x4_2.jpg",
+            "categoria": "Letras"
+        },
+
+        {
+            "id": "11",
+            "producto": "Cartel de 5 letras",
+            "descripcion": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado",
+            "detalle": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado. Algunas letras incluyen alambre forrado para dar forma. Se puede pedir sin alambre. Tamaño estándar: 12cm de alto x 10cm de ancho aproximadamente de acuerdo con la letra. Grosor de cada letra 2cms aproximadamente. Variantes de tamaño: Consultar x otros tamaños. Libre elección de diseños y colores. Sujetador en parte trasera que permite desplazar y acomodar las letras sobre el cordón. Incluye cordón blanco para que resalten las letras. Se puede pedir en otro color. No incluye accesorios.",
+            "stock": 5,
+            "precio": 1250,
+            "img1": "Letras_x5_1.jpg",
+            "img2": "Letras_x5_2.jpg",
+            "categoria": "Letras"
+        },
+
+        {
+            "id": "12",
+            "producto": "Cartel de 6 letras",
+            "descripcion": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado",
+            "detalle": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado. Algunas letras incluyen alambre forrado para dar forma. Se puede pedir sin alambre. Tamaño estándar: 12cm de alto x 10cm de ancho aproximadamente de acuerdo con la letra. Grosor de cada letra 2cms aproximadamente. Variantes de tamaño: Consultar x otros tamaños. Libre elección de diseños y colores. Sujetador en parte trasera que permite desplazar y acomodar las letras sobre el cordón. Incluye cordón blanco para que resalten las letras. Se puede pedir en otro color. No incluye accesorios.",
+            "stock": 4,
+            "precio": 1499,
+            "img1": "Letras_x6_1.jpg",
+            "img2": "Letras_x6_2.jpg",
+            "categoria": "Letras"
+        },
+
+        {
+            "id": "13",
+            "producto": "Cartel de 7 letras",
+            "descripcion": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado",
+            "detalle": "Cartel con letras tejidas en hilo de algodón combinado. Rellenas de vellón siliconado. Algunas letras incluyen alambre forrado para dar forma. Se puede pedir sin alambre. Tamaño estándar: 12cm de alto x 10cm de ancho aproximadamente de acuerdo con la letra. Grosor de cada letra 2cms aproximadamente. Variantes de tamaño: Consultar x otros tamaños. Libre elección de diseños y colores. Sujetador en parte trasera que permite desplazar y acomodar las letras sobre el cordón. Incluye cordón blanco para que resalten las letras. Se puede pedir en otro color. No incluye accesorios.",
+            "stock": 6,
+            "precio": 1750,
+            "img1": "Letras_x6_1.jpg",
+            "img2": "Letras_x6_2.jpg",
+            "categoria": "Letras"
+        }
+]

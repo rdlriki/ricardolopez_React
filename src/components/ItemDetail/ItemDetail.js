@@ -9,8 +9,8 @@ import Mensaje from '../Mensaje/Mensaje';
 
 function ItemDetail(props) {
 
-    /* como props es un array, lo guardo en producto que es un ojeto */
-    const producto = props.itemDetalle[0];
+    /* guardo props en Producto para trabajarlo mejor */
+    const producto = props.itemDetalle;
 
     /* UseState para hacer la logica para sumar y restar items para el carrito */
     const [numero, setNumero] = useState(1)

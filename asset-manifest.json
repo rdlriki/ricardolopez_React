@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ricardolopez_React/static/css/main.8f292cd4.css",
-    "main.js": "/ricardolopez_React/static/js/main.b03f9736.js",
+    "main.css": "/ricardolopez_React/static/css/main.8be1591a.css",
+    "main.js": "/ricardolopez_React/static/js/main.6cd9b907.js",
     "static/js/787.1e45d1bf.chunk.js": "/ricardolopez_React/static/js/787.1e45d1bf.chunk.js",
     "static/media/Converted documents.zip": "/ricardolopez_React/static/media/Converted documents.e97aafe5ef70c872b07e.zip",
     "static/media/Coming_soon.jpg": "/ricardolopez_React/static/media/Coming_soon.2c2770f5fe658f82e21b.jpg",
@@ -67,12 +67,12 @@
     "static/media/Leon_Leoncio_2.webp": "/ricardolopez_React/static/media/Leon_Leoncio_2.9a2287ba1df5da1e44ea.webp",
     "static/media/cartImg.png": "/ricardolopez_React/static/media/cartImg.bc9d324fa206b458abd5.png",
     "index.html": "/ricardolopez_React/index.html",
-    "main.8f292cd4.css.map": "/ricardolopez_React/static/css/main.8f292cd4.css.map",
-    "main.b03f9736.js.map": "/ricardolopez_React/static/js/main.b03f9736.js.map",
+    "main.8be1591a.css.map": "/ricardolopez_React/static/css/main.8be1591a.css.map",
+    "main.6cd9b907.js.map": "/ricardolopez_React/static/js/main.6cd9b907.js.map",
     "787.1e45d1bf.chunk.js.map": "/ricardolopez_React/static/js/787.1e45d1bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f292cd4.css",
-    "static/js/main.b03f9736.js"
+    "static/css/main.8be1591a.css",
+    "static/js/main.6cd9b907.js"
   ]
 }

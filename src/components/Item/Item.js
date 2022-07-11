@@ -6,14 +6,13 @@ import { Button, Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
-function Item(producto) {
+const Item = (producto) => {
 
     const [verMas, setVerMas] = useState(false);
 
 
     const clickVerMas = () =>{
         setVerMas(true)
-        console.log("esta aca")
     }
 
     return (
@@ -66,7 +65,7 @@ function Item(producto) {
                 </Row>
             </Container>
         </div>
-    )
+    );
 }
 
 export default Item;

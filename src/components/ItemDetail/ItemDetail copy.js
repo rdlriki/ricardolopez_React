@@ -2,10 +2,9 @@
 import './ItemDetail.css';
 
 /* Importo componentes */
-import { Carousel, Col, Container, Row, Button } from 'react-bootstrap';
-import React, { useContext, useState } from 'react';
-import ItemCount from '../ItemCount/ItemCount';
-import { Link } from 'react-router-dom';
+import { Carousel, Button, Card, Col, Container, Row } from 'react-bootstrap';
+import React, { useContext , useState } from 'react';
+import Mensaje from '../Mensaje/Mensaje';
 import { CartContext } from '../Context/CartContext';
 
 
@@ -14,41 +13,44 @@ function ItemDetail(props) {
     /* guardo props en Producto para trabajarlo mejor */
     const producto = props.itemDetalle;
 
-    //Comparto por useContext el addToCart al CartContext
-    const { addToCart } = useContext(CartContext);
+    //Me traigo la funcion ADD TO CART desde el contexto a este componente para enviar la informacion
+    const {addToCart} = useContext (CartContext)
 
-    //Defino la cantidad de items seleccionado
-    const [cantCart, setCantCart] = useState(0);
+    /* UseState para hacer la logica para sumar y restar items para el carrito */
+    const [numero, setNumero] = useState(1)
 
-    //Flag para mostrar el boton del carrito y ocultar el counter
-    const [verCarrito, setVerCarrito] = useState(false);
-
-    //Funcion para que, al apretar el boton, me navegue hacia el CARRITO
-    const clickVerCarrito = () => {
-        setVerCarrito(true)
+    const onAdd = (numero) => {
+        addToCart(props.producto  , numero)
     }
 
-    //Flag que utilizo para mostrar el boton de AGREGAR CARRITO o el COUNTER
-    const [purchaseCompleted, setPurchaseCompleted] = useState(false);
-
-    //Al apretar el boton, se carga a CantCart el valor del counter, se cambia flag del PurchaseCompleted y se comparte el Producto(objeto) y la cantidad al addToCart
-    const onAdd = (cantidad) => {
-        setCantCart(cantidad);
-        setPurchaseCompleted(true);
-        addToCart(producto, cantidad);
+    /* Funcion sumar */
+    const sumar = () => {
+        if (numero < producto.stock) {
+            setNumero(numero + 1)
+        }
     }
 
-    //Muestro en consola la cantidad del counter
-    console.log("La cantidad del producto agregado es: ", cantCart)
+    /* Funcion restar */
+    const restar = () => {
+        if (numero > 0) {
+            setNumero(numero - 1)
+        }
+    }
 
+    /* Funcion REINICIAR en valor incial, o sea: 1 */
+    const reiniciar = () => {
+        setNumero(1)
+    }
 
+    /*     interval={2000}
+     */
     return (
         <div>
             <Container>
                 {/* Genero 3 columnas: fotito chiquita, foto grande principal, info del producto */}
                 <Row>
 
-                    <Col lg >
+                    <Col lg>
                         <Carousel variant="dark" className='imagenPrincipal'>
                             <Carousel.Item className='imagenPrincipal' >
                                 <img
@@ -103,38 +105,31 @@ function ItemDetail(props) {
                             <Row>   {/* Precio del producto */}
                                 <Col>
                                     <div className='precio'>Precio: ${producto.precio}</div>
-                                    <h2 className='stock'>Unidades en Stock: {producto.stock}</h2>
-
                                 </Col>
                             </Row>
-
-                            {/* ACA MUESTRO EL COUNTER Y EL BOTON DE IR A CARRITO DE ACUERDO AL FLAG PURCHASECOMPLETED */}
-
 
                             <Row className="justify-content-center">    {/* Botoneras */}
                                 <Col xs={7}>
-                                    {!purchaseCompleted &&
-                                        <Col className="mt-3">
-                                            <ItemCount className="itemCount" inicial="1" stock={producto.stock} onAdd={onAdd} />
-                                        </Col>
-                                    }
+                                    <Card>
+                                        <Card.Body className='bodyCard'>
+                                            <div className="input-group mb-1 ">
+                                                <Button onClick={restar} className="input-group-text">-</Button>
+                                                <input type="text" className="form-control" value={numero} />
+                                                <Button onClick={sumar} className="input-group-text">+</Button>
+                                            </div>
+                                            <Button className="buttonCarrito" onClick={() => onAdd(numero)} >Agregar al carrito</Button>
+                                        </Card.Body>
+                                        <Button variant="primary" className="buttonRestart" onClick={reiniciar}>Reiniciar</Button>
+
+                                    </Card>
+                                    <div className='mensaje'>
+                                        <Mensaje numero={numero} stock={producto.stock}></Mensaje>
+                                    </div>
                                 </Col>
+
                             </Row>
-                            <div className='addCarrito'>
-                                <Row>
-                                    {purchaseCompleted &&
-                                        (<Col className="mt-3">
-                                            <Link to="/Cart" className=''>
-                                                <Button className="irCarrito" onClick={clickVerCarrito}>Ir a Carrito</Button>
-                                                {verCarrito && true}
-                                            </Link>
-                                        </Col>
-                                        )
-                                    }
-                                </Row>
-                            </div>
                         </Container>
-                    </Col>
+                    </Col> 
                 </Row>
             </Container>
         </div>

@@ -9,12 +9,15 @@ import { useParams } from 'react-router-dom';
 import { piguarte } from '../Piguarte/piguarte';
 
 
-export const ItemDetailContainerJsx = () => {
+function ItemDetailContainerJsx() {
     const [producto, setProducto] = useState([]);
     const [infoCargada, setInfoCargada] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
     const {productoid} = useParams();
     
+
+    //UTILIZO PROMESAS PARA LEER EL ARCHIVO CON LA INFORMACION DE LOS PRODUCTOS
+    //SI VIENE FILTRADO, MUESTRO POR ID
     useEffect(() => {
         setIsLoading(true)
         const getProducto  = new Promise ( (resolve) => {
@@ -50,8 +53,13 @@ export const ItemDetailContainerJsx = () => {
                 </Row>
             </Container>
         </div>
-
     );
 }
 
 export default ItemDetailContainerJsx;
+
+
+
+
+
+

@@ -55,9 +55,32 @@
     justify-content: center;
 }
 
+.stock{
+    margin:auto;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+}
+
 .mensaje p{
     margin:auto;
     width: auto;
     height: 2px;
     font-size: 10px;
+}
+
+.addCarrito{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.irCarrito{
+    background-color: blue !important;
+    border-color: blue !important ;
+    font-size: x-small !important;
+    width: auto;
+
+
 }

@@ -3,7 +3,8 @@ import { Container } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './Carrito.css';
 
-export default function Carrito() {
+
+const Carrito = () => {
 
     return (
         <Container className='contenedorCarrito'>
@@ -18,5 +19,7 @@ export default function Carrito() {
                 />{' '}
             </Link>
         </Container>
-    )
+    );
 }
+
+export default Carrito;

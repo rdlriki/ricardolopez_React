@@ -5,20 +5,25 @@ import ItemListContainerJsx from './components/ItemListContainer/ItemListContain
 import ItemDetailContainerJsx from './components/ItemDetailContainer/ItemDetailContainerJsx';
 import Carrito from './components/Carrito/Carrito';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import { CartProvider } from './components/Context/CartContext';
+/* import Cart from './components/Cart/Cart';
+ */
 
 function App() {
   return (
-    <BrowserRouter>
-      <NavbarBoostrap />
+    <CartProvider> {/* Agrego el CartProvider */}
+      <BrowserRouter>
+        <NavbarBoostrap />
 
-      <Routes>
-        <Route path="/" element={<ItemListContainerJsx greetings="Elija nuestros productos"/>}/>
-        <Route path="/categoria/:catid" element={<ItemListContainerJsx greetings="Elija de acuerdo a su Filtrado"/>}/>
-        <Route path="/producto/:productoid" element={<ItemDetailContainerJsx />}/>
-        <Route path="/carrito/" element={<Carrito />}/>
-        <Route path="*" element={<Navigate to="/"/> } />
-      </Routes>
-    </BrowserRouter>
+        <Routes>
+          <Route path="/" element={<ItemListContainerJsx greetings="Elija nuestros productos" />} />
+          <Route path="/categoria/:catid" element={<ItemListContainerJsx greetings="Elija de acuerdo a su Filtrado" />} />
+          <Route path="/producto/:productoid" element={<ItemDetailContainerJsx />} />
+          <Route path="/carrito/" element={<Carrito />}/>
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </BrowserRouter>
+    </CartProvider>
   );
 }
 

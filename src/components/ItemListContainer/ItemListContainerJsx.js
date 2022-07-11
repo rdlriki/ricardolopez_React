@@ -8,13 +8,15 @@ import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
 
 
-export const ItemListContainerJsx = ({ greetings }) => {
+function ItemListContainerJsx({ greetings }) {
     const { catid } = useParams();
     const [isLoading, setIsLoading] = useState(true);
     const [infoCargada, setInfoCargada] = useState(false)
 
     const [productos, setProductos] = useState([])
     
+    //UTILIZO PROMESAS PARA LEER EL ARCHIVO CON LA INFORMACION DE LOS PRODUCTOS
+    //SI VIENE FILTRADO, MUESTRO POR CATEGORIA
     useEffect(() => {
         setIsLoading(true)
         const getProductos  = new Promise ( (resolve) => {
@@ -45,7 +47,7 @@ export const ItemListContainerJsx = ({ greetings }) => {
             {infoCargada && <ItemList listadoProductos={productos} />} {/* Llamo el ItemList */}
             
         </div>
-    )
+    );
 }
 
 export default ItemListContainerJsx;

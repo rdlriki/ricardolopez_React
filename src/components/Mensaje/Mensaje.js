@@ -2,7 +2,7 @@
 import './Mensaje.css'
 
 
-function Mensaje({numero, stock}){
+const Mensaje = ({numero, stock}) => {
 
     /* Condicional para que no sume mas alla del stock */
     if (numero === stock){
@@ -22,7 +22,7 @@ function Mensaje({numero, stock}){
                 <p className="carritoVacio">Su carrito está vacío</p>
             </div>
         )
-    }
+    };
 }
 
 export default Mensaje;

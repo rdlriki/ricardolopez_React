@@ -3,7 +3,7 @@ import React from "react";
 import Item from '../Item/Item'
 import { Container, Row } from 'react-bootstrap';
 
-function ItemList({ listadoProductos }) {
+const ItemList = ({ listadoProductos }) => {
 
     /*     console.log('listadoProductos',listadoProductos)
      */
@@ -25,7 +25,7 @@ function ItemList({ listadoProductos }) {
                     categoria={product.categoria} />)}
             </Row>
         </Container>
-    )
+    );
 }
 
 export default ItemList;

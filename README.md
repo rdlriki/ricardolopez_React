@@ -41,3 +41,19 @@ En esta etapa deje los botones de sumar y restar, agregar carrito y reiniciar en
     - Utilizo FLAGS (usesState) para poder detectar cuando ya tengo realizada la lectura con FETCH (useEffect) y para saber en que momento puedo mostrar en pantalla los productos
     - Utilizo TimeOut para simular la lectura sobre una base de datos (useEffect).
     - Con estos FLAGS muestro mensajes de CARGANDO / CARGANDO DETALLE
+
+## Clase 8: Sincronizar Counter
+    - 10/07/2022: Subo la octava entrega de la clase. La sincronizacion del counter.
+    *IMPORTANTE*: Como almacenar los items en un archivo JSON no me funcionaba en Github PAGES, ahora utilizo la lectra de un archivo JSX por medio de PROMISE, no por FETCH. Ahora funciona en PAGES.
+        - Segun el desafio, tenia que separar la responsabilidad del ItemCount, lo cual esta realizado.
+        - Cuando hago clic en AgregarCarrito, desaparece la posibilidad de agregar otro item y aparece el boton de ir al carrito. En Consola se deja expreso la cantidad del carrito (cantCart)
+        - Haciendo clic en el boton de ir a carrito, va a una ruta VACIA de '/cart'
+
+## Clase 9: Cart Context
+    - 10/07/2022: Subo la novena entrega de la clase. El Cart Context.
+        - Cart Context esta creado y en el App como Provider
+        - Al hacer clic en Agregar Carrito, se genera el array CART con el detalle del item agregado y la cantidad (item, cantidad). Esto se imprime en consola.
+        - No acepta duplicado. En el caso de volver a agregar el item, suma la cantidad del item sin agregar un nuevo item por separado.
+        - Se agregan los metodos recomendados (addItem, removeItem, clear, isInCart).
+        - Hoy en dia, solo se utiliza addItem y isInCart. El primero agrega el item al array del carrito y el ultimo (isInCart) para que no se agregue el mismo item como componente del vector por separado. 
+        - Por el momento no se utiliza el removeItem y el Clear ya que eso se vera cuando se realice el componente del CARRITO (por ahora no implementado)

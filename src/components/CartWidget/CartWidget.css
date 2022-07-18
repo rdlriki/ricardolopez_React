@@ -1,0 +1,28 @@
+a{ 
+    text-decoration: none !important; 
+    color: #1d175c; 
+    float: left;
+    font-weight: 600;
+    font-size: 24;
+    font-family:  'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start
+}
+a:hover{
+    color: #e12257 !important; 
+}
+
+.cantItem{
+    background-color: #e12257;
+    color: white;
+    border-radius: 100%;
+    padding: 1px 7px;
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.cantItem:hover{
+    background-color: black;
+    color: white;
+}

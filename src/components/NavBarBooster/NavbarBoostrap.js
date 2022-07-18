@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
+import CartWidget from '../CartWidget/CartWidget';
 import CartContext from '../Context/CartContext';
 
 
@@ -11,7 +12,7 @@ import CartContext from '../Context/CartContext';
 function NavbarBoostrap() {
 
     const { cart } = useContext(CartContext);
-    
+
     return (
         <Navbar bg="light" expand="lg" >
             <Container>
@@ -33,19 +34,7 @@ function NavbarBoostrap() {
                         <Nav.Link as={Link} to='/categoria/Letras'>Letras</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
-                <Link to={'/Cart'}>
-                {cart.length !== 0 &&
-                    <img
-                        alt=""
-                        src={require('../Assets/Img/cartImg.png')}
-                        width="30"
-                        height="auto"
-                        className="d-inline-block align-text-bottom me-2 rounded"
-                        
-                    />
-                    
-                }
-                </Link>
+                <CartWidget />
             </Container>
         </Navbar>
     );

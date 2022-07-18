@@ -1,51 +1,31 @@
 import './Cart.css';
 
 import { Col, Container, Row } from 'react-bootstrap';
-import React, { useEffect, useState } from 'react';
 
-import { piguarte } from '../Piguarte/piguarte';
-
-/* import { useParams } from 'react-router-dom';
- */import ItemCart from '../ItemCart/ItemCart';
+import React from 'react';
+import ItemCart from '../ItemCart/ItemCart';
 import TotalCart from '../TotalCart/TotalCart';
 
 
 function Cart() {
-    const [producto, setProducto] = useState([]);
-/*     const {productoid} = useParams();
- */
-    useEffect(() => {
-        const getProducto  = new Promise ( (resolve) => {
-            setTimeout(() => {
-                const myData = piguarte.find( i => i.id === "1");
-                    
-                resolve(myData);
-                    
-            }, 2000);
-        });
 
-        getProducto.then((res) => setProducto(res))
-        getProducto.catch((err) => console.log(err))
-/*         .finally(() => {
-            setInfoCargada(true) 
-            setIsLoading(false)
-        }) */
-
-    }, []);
+    /*  Traigo por Context las funciones de getTotal y getQty.
+        De esta forma, al llamar TotalCart, envio el total y la qty deitems y plata en el carrito */
 
 
     return (
-            <Container className='body'>
+        <div className='bodyCart'>
+            <Container>
                 <Row>
                     <Col className="colPadding">
-                        <h3 className='pb-4 titulo'>Tu carrito de compras</h3>
+                        <h3 className='pb-4 titulo'>Este es tu carrito</h3>
 
                         <Container>
                             <Row>
                                 <Col md={8} className="contenedorDetalles">
-                                    <ItemCart producto={producto} />
+                                    <ItemCart />
                                 </Col>
-                                <Col md={4}>
+                                <Col md={4} className="contenedorTotal">
                                     <TotalCart />
                                 </Col>
                             </Row>
@@ -54,6 +34,9 @@ function Cart() {
                     </Col>
                 </Row>
             </Container>
+
+        </div>
+
     );
 }
 

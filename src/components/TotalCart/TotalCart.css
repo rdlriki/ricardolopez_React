@@ -1,0 +1,17 @@
+.itemCarrito .colTotales h4{
+    color: black;
+    text-shadow: 1px 1px white;
+    font-family: Calibri;
+    text-align: center;
+}
+
+.itemCarrito .totalText{
+    font-family: Calibri;
+    margin: 0px;
+}
+
+.itemCarrito .totalPrecio{
+    font-family: Calibri;
+    font-weight: bold;
+    margin: 0px;
+}

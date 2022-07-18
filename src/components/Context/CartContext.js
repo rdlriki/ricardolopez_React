@@ -19,6 +19,7 @@ export const CartProvider = ({defaultValue =[], children}) =>{
         setCart([]);
     }
 
+
     //Funcion para agregar itema en el carrito
     const addToCart = (item, qty) =>{
         console.log(item) //Imprimo el carrito
@@ -56,24 +57,9 @@ export const CartProvider = ({defaultValue =[], children}) =>{
         return cart.find((element) => element.item.id === id) 
     }
 
-    //Funcion para mas adelante, para tener la cantidad de items dentro del carrito recorriendo el array
-    const getQty = () => {
-        let cantidad = 0
-        cart.forEach((element) => cantidad = cantidad + element.qty) 
-        return cantidad
-    }
-
-    //Aca se obtiene el monto total del carrito recorriendo el array
-    const getTotal = () => {
-        let total = 0
-        cart.forEach((element) =>{
-            total = total + (element.qty * element.item.precio)
-        })
-        return total
-    }
-
     //Imprimo en consola el carrito
     console.log("Carrito: ", cart)
+
 
     //Comparto en el contexto el carrito, limpiar el carrito, agregar al carrito, eliminar del carrito, cantidad de items dentro del carrito y el total del carrito
     const context = {
@@ -81,8 +67,7 @@ export const CartProvider = ({defaultValue =[], children}) =>{
         clearCart,
         addToCart,
         removeFromCart,
-        getQty,
-        getTotal
+        isInCart,
     }
 
     

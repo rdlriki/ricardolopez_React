@@ -1,16 +1,36 @@
+.bodyCart{
+    background-image: url('../Assets/Img/cartBackground.jpg');
+    background-size:cover;  /* COMO LA IMAGEN ES PEQUEÑA, LA PONGO COVER*/
+    background-position: center;    /*CENTRADA*/
+    background-repeat: no-repeat;   /*SIN REPETIR*/
+
+}
+
 .contenedorDetalles {
     background-color: white;
     border: 0.5px solid #a1a1a14f !important;
-    border-top-right-radius: 25px !important;
     border-bottom-left-radius: 25px !important;
+    border-top-left-radius: 25px !important;
     padding: 20px;
+}
+
+.contenedorTotal {
+    background-color: white;
+    border: 0.5px solid #a1a1a14f !important;
+    border-top-right-radius: 25px !important;
+    border-bottom-right-radius: 25px !important;
+    padding: 10px;
+}
+
+.bodyCart .titulo{
+    color: rgb(13, 15, 154);
+    text-shadow: 2px 1px white;
 }
 
 .card.itemCarrito {
     border: none !important;
     border-top-right-radius: none !important;
     border-bottom-left-radius: none !important;
-    border-bottom: 0.5px solid #a1a1a14f !important;
     text-align: left !important;
 }
 
@@ -21,30 +41,22 @@
 }
 
 .textUnid {
-    text-align: left !important;
+    text-align: right ;
 }
 
 .inputUnid {
     width: 50px !important;
 }
 
-.imageThumb {
-    width: 100%;
-}
-
-.itemCarrito .favorito,
-.itemCarrito .favorito svg {
-    color: red !important;
-}
 
 .colTotales {
     border-bottom: 0.5px solid #1d175c13;
     padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.totalText {
-    text-align: left;
-}
 
 .totalPrecio {
     text-align: right;

@@ -20,14 +20,6 @@ function ItemDetail(props) {
     //Defino la cantidad de items seleccionado
     const [cantCart, setCantCart] = useState(0);
 
-    //Flag para mostrar el boton del carrito y ocultar el counter
-    const [verCarrito, setVerCarrito] = useState(false);
-
-    //Funcion para que, al apretar el boton, me navegue hacia el CARRITO
-    const clickVerCarrito = () => {
-        setVerCarrito(true)
-    }
-
     //Flag que utilizo para mostrar el boton de AGREGAR CARRITO o el COUNTER
     const [purchaseCompleted, setPurchaseCompleted] = useState(false);
 
@@ -124,9 +116,8 @@ function ItemDetail(props) {
                                 <Row>
                                     {purchaseCompleted &&
                                         (<Col className="mt-3">
-                                            <Link to="/Cart" className=''>
-                                                <Button className="irCarrito" onClick={clickVerCarrito}>Ir a Carrito</Button>
-                                                {verCarrito && true}
+                                            <Link to={"/cart/"}>
+                                                <Button className="float-end" size="sm" variant="info">Ir a Carrito</Button>
                                             </Link>
                                         </Col>
                                         )

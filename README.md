@@ -57,3 +57,21 @@ En esta etapa deje los botones de sumar y restar, agregar carrito y reiniciar en
         - Se agregan los metodos recomendados (addItem, removeItem, clear, isInCart).
         - Hoy en dia, solo se utiliza addItem y isInCart. El primero agrega el item al array del carrito y el ultimo (isInCart) para que no se agregue el mismo item como componente del vector por separado. 
         - Por el momento no se utiliza el removeItem y el Clear ya que eso se vera cuando se realice el componente del CARRITO (por ahora no implementado)
+
+## Clase 10: Cart View
+    - 17/07/2022: Subo la decima entrega de la clase. El Cart View
+        - En esta entrega estoy agregando la seccion del carrito
+        - La pagina tiene una imagen de background
+        - Se generan 2 columans:
+            - Una con el detalle del item
+                - Titulo / Categoria / Unidades / Precio unitario / Precio total
+            - Otra con el detalle del total
+                - Total de items a comprar
+                - Precio total a pagar
+        - En cada item se encuentra el boton ELIMINAR ITEM (funcion removeItem)
+        - Los items no se duplican (funcion isInCart)
+        - Se encuentra un boton de eliminar carrito (funcion clear)
+        - Los botones LIMPIAR CARRITO Y FINALIZAR COMPRA, tienen condicionales
+            - Si el carrito esta vacio, estan desabilitados con un color gris
+            - Cuando el carrito tiene al menos 1 item, cambiar de color y cumple su funcion
+        - Si no hay productos en el carrito, el cardWidget no se muestra (condicional)

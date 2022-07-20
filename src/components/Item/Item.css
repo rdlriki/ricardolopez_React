@@ -23,7 +23,7 @@
 
 .cards .productoDescripcion h2.categoria{
     font-size: 12px;
-    color: #e12257;
+    color: #cb1548;
 }
 
 .cards .productoDescripcion h1{
@@ -51,7 +51,7 @@
 .cards .productoDescripcion .precio{
     font-size: 12px;
     font-weight: bold;
-    color: #e12257;
+    color: #cb1548;
 }
 
 .cards .productoDescripcion .stock{
@@ -62,7 +62,5 @@
 
 .cards .productoDescripcion .verMas{
     margin-top: 2px;
-    background-color: gray !important;
-    border-color: gray !important ;
-    font-size: x-small !important;
+    font-size: x-small ;
 }

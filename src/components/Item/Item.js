@@ -35,7 +35,7 @@ const Item = (producto) => {
                             <Row>   {/* Muestro la imagen */}
                                 <Link to={`/producto/${producto.id}`}>
                                     <Col className='imagenPrincipal'>
-                                        <img src={require(`../Assets/Img/${producto.img1}`)} alt={producto.producto} style={{ width: 'auto', height: '150px' }} />
+                                        <img src={producto.img1} alt={producto.producto} style={{ width: 'auto', height: '150px' }} />
                                     </Col>
                                 </Link>
                             </Row>
@@ -56,7 +56,7 @@ const Item = (producto) => {
                             </Row>
                             <Row>   {/* Boton para ver mas */}
                                 <Link to={`/producto/${producto.id}`}>
-                                    <Button className="verMas" onClick={clickVerMas} size="sm">Ver mas</Button>
+                                    <Button className="verMas" variant="secondary" onClick={clickVerMas} size="sm">Ver mas</Button>
                                     {verMas && true}
                                 </Link>
                             </Row>

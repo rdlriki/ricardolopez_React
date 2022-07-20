@@ -75,3 +75,11 @@ En esta etapa deje los botones de sumar y restar, agregar carrito y reiniciar en
             - Si el carrito esta vacio, estan desabilitados con un color gris
             - Cuando el carrito tiene al menos 1 item, cambiar de color y cumple su funcion
         - Si no hay productos en el carrito, el cardWidget no se muestra (condicional)
+
+## Clase 11: Firebase I
+    -20/07/22: Subo la onceava entrega de la clase. Leer la informacion desde Firebase.
+        - Generé en Firebase una coleccion llamada PruebaPiguarte / Ya no tomo los datos desde un archivo JSX
+        - Leo la informacion desde item list container utilizando useparams para filtrar por categoria o para renderizar todos los productos.
+        - Eliminé la gran mayoria de fotos de ASSETS/Images (solo quedan icono de carrito y fondo para CART)
+        - desde item detail container, utilizo una funcion creada en Assets/Services/firestore.js para que la promesa sea leida correctamente.
+        - Ademas, coloqué condicional al momento de ver el ItemCount para que, cuando el valor seleccionado sea 0, se deshabilite el enviar al carrito el producto.

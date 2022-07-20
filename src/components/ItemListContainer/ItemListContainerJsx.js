@@ -1,11 +1,13 @@
 /* Importo Css */
 import '../ItemListContainer/ItemListContainer.css';
-import { piguarte } from '../Piguarte/piguarte';
 
 /* Importo componentes */
 import { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
 import { useParams } from 'react-router-dom';
+import { collection, getDocs, getFirestore, query, where } from 'firebase/firestore/lite';
+
+
 
 
 function ItemListContainerJsx({ greetings }) {
@@ -14,30 +16,28 @@ function ItemListContainerJsx({ greetings }) {
     const [infoCargada, setInfoCargada] = useState(false)
 
     const [productos, setProductos] = useState([])
-    
+
+    const db = getFirestore();
+
+
     //UTILIZO PROMESAS PARA LEER EL ARCHIVO CON LA INFORMACION DE LOS PRODUCTOS
     //SI VIENE FILTRADO, MUESTRO POR CATEGORIA
+
     useEffect(() => {
-        setIsLoading(true)
-        const getProductos  = new Promise ( (resolve) => {
-            setTimeout(() => {
-                const myData = catid 
-                    ? piguarte.filter(product => product.categoria === catid)
-                    : piguarte; 
-                    
-                    
-                resolve(myData);
-                    
-                }, 2000);
-        });
 
-        getProductos.then(res => setProductos(res))
-        getProductos.catch(err => console.log(err))
-        .finally(() => {
-            setInfoCargada(true)
-            setIsLoading(false)
-        })
-
+        if (catid === undefined) {
+            const productosFirebase = collection(db, "PruebaPiguarte")
+            getDocs(productosFirebase).then((snapshot) => {
+                setProductos(snapshot.docs.map((doc) => { return { ...doc.data(), id: doc.id } }))
+            })
+        } else {
+            const productosFirebase = query(collection(db, "PruebaPiguarte"), where("categoria", "==", catid))
+            getDocs(productosFirebase).then((snapshot) => {
+                setProductos(snapshot.docs.map((doc) => { return { ...doc.data(), id: doc.id } }))
+            })
+        }
+        setInfoCargada(true)
+        setIsLoading(false)
     }, [catid]);
 
     return (
@@ -45,7 +45,6 @@ function ItemListContainerJsx({ greetings }) {
             {!isLoading && (<h3 className="saludoInicial">{greetings}</h3>)} {/* Imprimo el saludoInidial */}
             {isLoading && (<h3>Cargando...</h3>)}
             {infoCargada && <ItemList listadoProductos={productos} />} {/* Llamo el ItemList */}
-            
         </div>
     );
 }

@@ -31,7 +31,7 @@ function ItemCart() {
                     {cart.length !== 0 ? cart.map(i =>
                         <Row className='carrito'>
                             <Col xs={3} className="imagen">
-                                <img src={require(`../Assets/Img/${i.item.img1}`)} alt={i.item.producto} className="imageThumb" />
+                                <img src={i.item.img1} alt={i.item.producto} className="imageThumb" />
                             </Col>
                             <Col xs={6} className="detalle">
                                 <h5 className='titulo'><strong>{i.item.producto}</strong></h5>

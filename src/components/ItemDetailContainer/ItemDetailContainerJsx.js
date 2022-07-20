@@ -4,39 +4,30 @@ import './ItemDetailContainer.css';
 /* Importo componentes */
 import { useEffect, useState } from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
-import { Container, Row , Col } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
-import { piguarte } from '../Piguarte/piguarte';
+import { getProducto } from '../Assets/Services/firestore';
 
 
 function ItemDetailContainerJsx() {
     const [producto, setProducto] = useState([]);
     const [infoCargada, setInfoCargada] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
-    const {productoid} = useParams();
-    
+    const { productoid } = useParams();
 
-    //UTILIZO PROMESAS PARA LEER EL ARCHIVO CON LA INFORMACION DE LOS PRODUCTOS
-    //SI VIENE FILTRADO, MUESTRO POR ID
+
     useEffect(() => {
-        setIsLoading(true)
-        const getProducto  = new Promise ( (resolve) => {
-            setTimeout(() => {
-                const myData = piguarte.find( i => i.id === productoid);
-                    
-                resolve(myData);
-                    
-            }, 2000);
-        });
+        
+            getProducto(productoid)
+            .then((res) => setProducto(res))
+            .catch((err) => console.log(err))
+            .finally(() => {
+                setInfoCargada(true) 
+                setIsLoading(false)
+            })
+            
 
-        getProducto.then((res) => setProducto(res))
-        getProducto.catch((err) => console.log(err))
-        .finally(() => {
-            setInfoCargada(true) 
-            setIsLoading(false)
-        })
-
-    }, [productoid]); 
+    }, [productoid]);
 
 
     return (
@@ -46,7 +37,8 @@ function ItemDetailContainerJsx() {
                 <Row>
                     <Col className="colPadding">
                         {isLoading && (<h3>Cargando detalle...</h3>)}
-
+                        {/* {console.log("productos", productos)}
+                        {console.log("producto", producto)} */}
                         {/* Con este condicional, siendo verdadero, renderizo */}
                         {infoCargada && <ItemDetail itemDetalle={producto} />}
                     </Col>
@@ -57,9 +49,3 @@ function ItemDetailContainerJsx() {
 }
 
 export default ItemDetailContainerJsx;
-
-
-
-
-
-

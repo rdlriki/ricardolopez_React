@@ -17,7 +17,7 @@ function CartWidget() {
     return (
         <div>
             <NavLink className='icons' to='/cart'>
-                {suma != 0 && <span className='cantItem'>{suma}</span>}
+                {suma !== 0 && <span className='cantItem'>{suma}</span>}
                 {cart.length !== 0 &&
                     <img
                         alt=""

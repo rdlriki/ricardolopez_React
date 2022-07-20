@@ -11,7 +11,8 @@ import { CartContext } from '../Context/CartContext';
 
 function ItemDetail(props) {
 
-    /* guardo props en Producto para trabajarlo mejor */
+/*     console.log("ItemDetail", props)
+ */    /* guardo props en Producto para trabajarlo mejor */
     const producto = props.itemDetalle;
 
     //Comparto por useContext el addToCart al CartContext
@@ -45,7 +46,7 @@ function ItemDetail(props) {
                             <Carousel.Item className='imagenPrincipal' >
                                 <img
                                     className="d-block"
-                                    src={require(`../Assets/Img/${producto.img1}`)}
+                                    src={producto.img1}
                                     alt="{producto.descripcion}"
                                 />
                                 <Carousel.Caption >
@@ -56,7 +57,7 @@ function ItemDetail(props) {
                             <Carousel.Item  >
                                 <img
                                     className="d-block"
-                                    src={require(`../Assets/Img/${producto.img2}`)}
+                                    src={producto.img2}
                                     alt="{producto.descripcion}"
                                 />
 

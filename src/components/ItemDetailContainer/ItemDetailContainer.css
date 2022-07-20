@@ -19,16 +19,9 @@
 }
 
 .buttonCarrito{
-    background-color: #e12257 !important;
-    border-color: #e12257 !important ;
-    font-size: x-small !important;
+    font-size: x-small;
 }
 
-.buttonRestart{
-    background-color: blue !important;
-    border-color: blue !important ;
-    font-size: x-small !important;
-}
 
 .tituloPrincipal{
     color: #1d175c;

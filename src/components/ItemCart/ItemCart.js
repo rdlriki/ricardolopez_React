@@ -16,7 +16,7 @@ function ItemCart() {
     return (
         <Col >
             <Card className='itemCarrito'>
-                <Container>
+                <Container >
                     <Row >
                         <Col>
                             <div className='clearCart'>
@@ -29,7 +29,7 @@ function ItemCart() {
                         </Col>
                     </Row>
                     {cart.length !== 0 ? cart.map(i =>
-                        <Row className='carrito'>
+                        <Row className='carrito' key={i.item.id}>
                             <Col xs={3} className="imagen">
                                 <img src={i.item.img1} alt={i.item.producto} className="imageThumb" />
                             </Col>

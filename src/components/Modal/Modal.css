@@ -1,0 +1,13 @@
+.modal{
+    font-family:  'Montserrat', sans-serif;
+}
+.modal-header, .modal-footer{
+    background-color: #edebeb;
+    color: #1d175c;
+}
+.form-label{
+    color:#e12257;
+}
+.mensajeFinal{
+    color: #1d175c;
+}

@@ -117,7 +117,7 @@ function ItemDetail(props) {
                                 <Row>
                                     {purchaseCompleted &&
                                         (<Col className="mt-3">
-                                            <Link to={"/cart/"}>
+                                            <Link to={"/cart"}>
                                                 <Button className="float-end" size="sm" variant="info">Ir a Carrito</Button>
                                             </Link>
                                         </Col>

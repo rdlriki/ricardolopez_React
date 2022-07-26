@@ -1,6 +1,6 @@
 //CART CONTEXT PARA VINCULAR TODO
 //Importo componentes de REACT
-import {createContext, useState} from 'react';
+import { createContext, useState } from 'react';
 
 //Exporto el CartContext para que una todo el contexto con Provider
 export const CartContext = createContext({})
@@ -9,11 +9,11 @@ export const CartContext = createContext({})
 const { Provider } = CartContext
 
 //el CartProvider comparte un array por defaul y un children
-export const CartProvider = ({defaultValue =[], children}) =>{
+export const CartProvider = ({ defaultValue = [], children }) => {
 
     //Defino el carrito: CART
     const [cart, setCart] = useState(defaultValue);
-    
+
     //Funcion para limpiar el carrito!!!!
     const clearCart = () => {
         setCart([]);
@@ -21,28 +21,37 @@ export const CartProvider = ({defaultValue =[], children}) =>{
 
 
     //Funcion para agregar itema en el carrito
-    const addToCart = (item, qty) =>{
+    const addToCart = (item, qty) => {
         console.log(item) //Imprimo el carrito
         if (isInCart(item.id)) {    //Condicion: Si el item esta en el carrito, no lo agrego nuevo, sino que sumo su cantidad por la nueva
             const newCart = [...cart]
-            for (const element of newCart){
+            for (const element of newCart) {
                 if (element.item.id === item.id) {
                     element.qty = element.qty + qty;
+                    element.newStock = item.stock - element.qty;
+                    if (element.qty > item.stock) {
+                        console.log(element.qty)
+                        element.qty = item.stock;
+                        element.newStock = 0;
+                    }
+
                 }
             }
             setCart(newCart);   //Pisa el carrito con el nuevo
         } else {
             //Si no esta dentro del array, lo agrego como un item nuevo
-        setCart( 
-            [
-                ...cart,
-                {
-                    item: item,
-                    qty: qty,
-                }
-            ]
-        )
+            setCart(
+                [
+                    ...cart,
+                    {
+                        item: item,
+                        qty: qty,
+                        newStock: (item.stock - qty)
+                    }
+                ]
+            )
         }
+        console.log(cart)
     }
 
     //Funcion para eliminar el item
@@ -53,8 +62,8 @@ export const CartProvider = ({defaultValue =[], children}) =>{
     }
 
     //Funcion booleana para encontrar un item dentro del ARRAY. Si lo encuentra, esta funcion es TRUE
-    const isInCart = (id) =>{
-        return cart.find((element) => element.item.id === id) 
+    const isInCart = (id) => {
+        return cart.find((element) => element.item.id === id)
     }
 
     //Imprimo en consola el carrito
@@ -70,7 +79,7 @@ export const CartProvider = ({defaultValue =[], children}) =>{
         isInCart,
     }
 
-    
+
     return (
         <Provider value={context}>
             {children}

@@ -74,3 +74,7 @@
     display: flex;
     justify-content: center;
 }
+
+.addCarrito .boton{
+    font-size: x-small;
+}

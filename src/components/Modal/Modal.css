@@ -2,12 +2,23 @@
     font-family:  'Montserrat', sans-serif;
 }
 .modal-header, .modal-footer{
-    background-color: #edebeb;
-    color: #1d175c;
+    background-color: #0b79cd;
+    color: #ffffff;
 }
+.modal-body{
+    background-color: #a2b2be;
+}
+
+.modal-body .text{
+    color: #acaaaa;
+    font-style: italic;
+}
+
+
 .form-label{
-    color:#e12257;
+    color:#432a31;
 }
+
 .mensajeFinal{
-    color: #1d175c;
+    color: #432a31;
 }

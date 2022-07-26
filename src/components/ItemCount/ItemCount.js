@@ -4,6 +4,8 @@ import { useState } from 'react'
 
 //IMPORTO COMPONENTE
 import Mensaje from "../Mensaje/Mensaje";
+import Nostock from "../Nostock/Nostock";
+import { Link } from "react-router-dom";
 
 
 function ItemCount(props) {
@@ -35,7 +37,6 @@ function ItemCount(props) {
         } else {
             setCarritoVacio(false)
         }
-
     }
 
     /* Funcion REINICIAR en valor incial, o sea: 1 */
@@ -54,28 +55,43 @@ function ItemCount(props) {
     }
 
     return (
-        <Container>
-            <Card>
-                <Card.Body className='bodyCard'>
-                    <div className="input-group mb-1 ">
-                        <Button onClick={restar} className="input-group-text">-</Button>
-                        <input type="text" className="form-control" value={numero} onChange={guardar} />
-                        <Button onClick={sumar} className="input-group-text">+</Button>
-                    </div>
+        <div>
+            {props.stock ? (
+                <Container>
+                    <Card>
+                        <Card.Body className='bodyCard'>
+                            <div className="input-group mb-1 ">
+                                <Button onClick={restar} className="input-group-text">-</Button>
+                                <input type="text" className="form-control" value={numero} onChange={guardar} />
+                                <Button onClick={sumar} className="input-group-text">+</Button>
+                            </div>
 
-                    {carritoVacio ? (
-                        <Button className="buttonCarrito" disabled variant="secondary" onClick={addToCart}>Agregar al carrito</Button>
-                    ) : (
-                        <Button className="buttonCarrito"  variant="danger" onClick={addToCart}>Agregar al carrito</Button>
-                    )
-                    }
-                </Card.Body>
-                <Button variant="primary" className="buttonCarrito" onClick={reiniciar}>Reiniciar</Button>
-            </Card>
-            <div className='mensaje'>
-                <Mensaje numero={numero} stock={props.stock}></Mensaje>
-            </div>
-        </Container>
+                            {carritoVacio ? (
+                                <Button className="buttonCarrito" disabled variant="secondary" onClick={addToCart}>Agregar al carrito</Button>
+                            ) : (
+                                <Button className="buttonCarrito" variant="danger" onClick={addToCart}>Agregar al carrito</Button>
+                            )
+                            }
+                        </Card.Body>
+                        <Button variant="primary" className="buttonCarrito" onClick={reiniciar}>Reiniciar</Button>
+                    </Card>
+                    <div className='mensaje'>
+                        <Mensaje numero={numero} stock={props.stock}></Mensaje>
+                    </div>
+                </Container>
+            ) : (
+                <div>
+                    <Link to={"/"}>
+                        <Button className="float-end boton" size="sm" variant="dark">Seguir Comprando</Button>
+                    </Link>
+                    <Nostock />
+
+                </div>
+            )
+
+            }
+
+        </div>
     );
 }
 

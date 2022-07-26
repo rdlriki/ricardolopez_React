@@ -11,8 +11,8 @@ import { CartContext } from '../Context/CartContext';
 
 function ItemDetail(props) {
 
-/*     console.log("ItemDetail", props)
- */    /* guardo props en Producto para trabajarlo mejor */
+    /*     console.log("ItemDetail", props)
+     */    /* guardo props en Producto para trabajarlo mejor */
     const producto = props.itemDetalle;
 
     //Comparto por useContext el addToCart al CartContext
@@ -38,10 +38,8 @@ function ItemDetail(props) {
     return (
         <div>
             <Container>
-                {/* Genero 3 columnas: fotito chiquita, foto grande principal, info del producto */}
                 <Row>
-
-                    <Col lg >
+                    <Col lg>
                         <Carousel variant="dark" className='imagenPrincipal'>
                             <Carousel.Item className='imagenPrincipal' >
                                 <img
@@ -68,15 +66,12 @@ function ItemDetail(props) {
                             </Carousel.Item>
                         </Carousel>
                     </Col>
-
-
-                    {/* Tercera columna: Datos del producto */}
                     <Col className='productoDescripcion' lg>
                         <Container>
-
+                        
                             {/* Aca hago 5 filas para mostrar informacion */}
                             <Row>   {/* Fila de categoria */}
-                                <Col xs={10}>
+                                <Col>
                                     <h2 className='categoria'>{producto.categoria}</h2>
                                 </Col>
                             </Row>
@@ -114,16 +109,24 @@ function ItemDetail(props) {
                                 </Col>
                             </Row>
                             <div className='addCarrito'>
-                                <Row>
-                                    {purchaseCompleted &&
-                                        (<Col className="mt-3">
+                                {purchaseCompleted &&
+                                    (<Row>
+
+                                        <Col className="mt-3">
                                             <Link to={"/cart"}>
-                                                <Button className="float-end" size="sm" variant="info">Ir a Carrito</Button>
+                                                <Button className="float-end boton" size="sm" variant="success">Ir a Carrito</Button>
+                                            </Link>
+                                            </Col>
+
+                                        <Col className="mt-3">
+                                            <Link to={"/"}>
+                                                <Button className="float-end boton" size="sm" variant="dark">Seguir Comprando</Button>
                                             </Link>
                                         </Col>
-                                        )
-                                    }
-                                </Row>
+                                    </Row>
+                                    )
+
+                                }
                             </div>
                         </Container>
                     </Col>

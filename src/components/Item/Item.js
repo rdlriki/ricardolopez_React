@@ -59,6 +59,7 @@ const Item = (producto) => {
                                     <Button className="verMas" variant="secondary" onClick={clickVerMas} size="sm">Ver mas</Button>
                                     {verMas && true}
                                 </Link>
+                                
                             </Row>
                         </Container>
                     </Col>

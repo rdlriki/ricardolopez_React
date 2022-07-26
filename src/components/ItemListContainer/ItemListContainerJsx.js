@@ -23,9 +23,9 @@ function ItemListContainerJsx({ greetings }) {
     //UTILIZO PROMESAS PARA LEER EL ARCHIVO CON LA INFORMACION DE LOS PRODUCTOS
     //SI VIENE FILTRADO, MUESTRO POR CATEGORIA
 
-    useEffect(() => {
+    useEffect( () => {
 
-        if (catid === undefined) {
+        if (!catid) {
             const productosFirebase = collection(db, "PruebaPiguarte")
             getDocs(productosFirebase).then((snapshot) => {
                 setProductos(snapshot.docs.map((doc) => { return { ...doc.data(), id: doc.id } }))
@@ -38,7 +38,7 @@ function ItemListContainerJsx({ greetings }) {
         }
         setInfoCargada(true)
         setIsLoading(false)
-    }, [catid]);
+    }, [ catid ] );
 
     return (
         <div className="contenedor">

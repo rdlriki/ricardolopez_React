@@ -83,3 +83,15 @@ En esta etapa deje los botones de sumar y restar, agregar carrito y reiniciar en
         - Eliminé la gran mayoria de fotos de ASSETS/Images (solo quedan icono de carrito y fondo para CART)
         - desde item detail container, utilizo una funcion creada en Assets/Services/firestore.js para que la promesa sea leida correctamente.
         - Ademas, coloqué condicional al momento de ver el ItemCount para que, cuando el valor seleccionado sea 0, se deshabilite el enviar al carrito el producto.
+
+## Clase 12: Firebase II
+    -25/07/22: Subo la doceava entrega de la clase. Firebase II
+        - En esta entrega, estoy agregando:
+            - Logica para que, si no hay productos en stock, haya un MODAL avisando que no hay stock y por ende, no se puede agregar a carrito
+            - Si se finaliza compra, se agrega genera una coleccion llamada "oc" (orden de compra)
+            - Alli se agregan todos los datos del cliente (nombre, apellido, mail, telefono y fecha)
+            - Al momento de finalizar la compra
+                - Aparece un modal con mensaje
+                - Ademas, se actualiza el stock de producto segun la compra
+                - Se vacia el carrito
+        - Creo haber cumplido con el desafio

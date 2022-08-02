@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/ricardolopez_React/static/css/main.c03410c2.css",
-    "main.js": "/ricardolopez_React/static/js/main.da0ad770.js",
+    "main.css": "/ricardolopez_React/static/css/main.637e884d.css",
+    "main.js": "/ricardolopez_React/static/js/main.89d54e21.js",
     "static/js/787.1e45d1bf.chunk.js": "/ricardolopez_React/static/js/787.1e45d1bf.chunk.js",
     "static/media/cartBackground.jpg": "/ricardolopez_React/static/media/cartBackground.6aa5982b02b896ce4a3c.jpg",
     "static/media/Piguarte_Logo.png": "/ricardolopez_React/static/media/Piguarte_Logo.5c89f64ddf56ede9b3c6.png",
     "static/media/cartImg.png": "/ricardolopez_React/static/media/cartImg.bc9d324fa206b458abd5.png",
     "index.html": "/ricardolopez_React/index.html",
-    "main.c03410c2.css.map": "/ricardolopez_React/static/css/main.c03410c2.css.map",
-    "main.da0ad770.js.map": "/ricardolopez_React/static/js/main.da0ad770.js.map",
+    "main.637e884d.css.map": "/ricardolopez_React/static/css/main.637e884d.css.map",
+    "main.89d54e21.js.map": "/ricardolopez_React/static/js/main.89d54e21.js.map",
     "787.1e45d1bf.chunk.js.map": "/ricardolopez_React/static/js/787.1e45d1bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c03410c2.css",
-    "static/js/main.da0ad770.js"
+    "static/css/main.637e884d.css",
+    "static/js/main.89d54e21.js"
   ]
 }

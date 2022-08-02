@@ -142,6 +142,6 @@ En esta etapa deje los botones de sumar y restar, agregar carrito y reiniciar en
 
 ### `npm start`
 
-    podrá correr el proyecto de manera local
+    Podrá correr el proyecto de manera local (localhost:3000)
 
 

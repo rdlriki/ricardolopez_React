@@ -95,3 +95,48 @@ En esta etapa deje los botones de sumar y restar, agregar carrito y reiniciar en
                 - Ademas, se actualiza el stock de producto segun la compra
                 - Se vacia el carrito
         - Creo haber cumplido con el desafio
+
+## Clase 13: PROYECTO FINAL
+    -01/08/22: Subo la última entrega: PROYECTO FINAL
+        - En esta entrega se agrega:
+            - Cuando no se completan TODOS los datos en el Fromulario de compra, aparece un MODAL indicando que ingrese TODOS los datos.
+            - Se utiliza una variable en el CART CONTEXT ya que es parte de todo el proyecto y tiene visibilidad en todas los compoentes.
+            - Desde el complemento del formulario se detecta el flag que no se completo informacion y se ejecuta el modal.
+            - Cuando se ejecuta el modal, se vuelve a cambiar el flag para reiniciar el analisis.
+
+
+## PIGUARTE:
+**Piguarte es un e-commerce de productos de crochet. Se utiliza como "base de datos" Firebase.
+
+Cuenta con:
+    - Muestra todos los productos en la pagina inicial
+    - Posee filtro por 3 categorías: Muniecos, Muniecas, Letras (no utilice la Ñ)
+    - En cada imagen, se puede leer una breve descripcion
+    - Ingresando en el producto, se puede leer un mayor detalle del producto
+    - Una vez ingresado el item en el carrito, se puede observar el precio parcial y total de lo seleccionado
+    - Al finalizar la compra y completo el formulario de contacto, se guarda la compra en Firebase como OC y se otorga al usuario un numero de seguimiento / compra para su validación.
+    - Control de stock ya que parte de un stock determinado y al momento de hacer la compra, va restando las cantidades compradas.
+
+### Dependencias
+
+    - Uso de React Router Dom para la navegacion
+    - Booster para el renderizado / estilado de las pantallas
+    - Firebase para la lectura de productos en la nube
+
+
+# INSTALACION
+
+1. Realizar una clonación del repositorio
+2. En la raíz del proyecto, realizar el siguiente comando:
+
+### `npm install`
+
+    Esto instalrá todas las dependencias del proyecto
+
+3. Utilizando
+
+### `npm start`
+
+    podrá correr el proyecto de manera local
+
+

@@ -9,7 +9,7 @@ import { Card, Col, Container, Row, Button } from 'react-bootstrap';
 import React, { useContext, useState } from 'react';
 import { Link } from "react-router-dom";
 import CartContext from '../Context/CartContext';
-import ModalCierre from '../Modal/Modal';
+import FinalizarCompra from '../FinalizarCompra/FinalizarCompra';
 
 
 function TotalCart(props) {
@@ -71,7 +71,7 @@ function TotalCart(props) {
                     </Card.Body>
                 </Card>
             </Col>
-            <ModalCierre show={mostrar} handlerClose={handlerClose} />
+            <FinalizarCompra show={mostrar} handlerClose={handlerClose} />
         </>
     );
 }

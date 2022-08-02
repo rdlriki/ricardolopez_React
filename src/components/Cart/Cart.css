@@ -1,4 +1,4 @@
-.bodyCart{
+.cartBody{
     background-image: url('../Assets/Img/cartBackground.jpg');
     background-size:cover;  /* COMO LA IMAGEN ES PEQUEÑA, LA PONGO COVER*/
     background-position: center;    /*CENTRADA*/
@@ -22,42 +22,7 @@
     padding: 10px;
 }
 
-.bodyCart .titulo{
+.cartBody .titulo{
     color: rgb(13, 15, 154);
     text-shadow: 2px 1px white;
-}
-
-.card.itemCarrito {
-    border: none ;
-    border-top-right-radius: none ;
-    border-bottom-left-radius: none ;
-    text-align: left ;
-}
-
-.unid {
-    width: 100%;
-    position: relative;
-    text-align: center;
-}
-
-.textUnid {
-    text-align: right ;
-}
-
-.inputUnid {
-    width: 50px ;
-}
-
-
-.colTotales {
-    border-bottom: 0.5px solid #1d175c13;
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-.totalPrecio {
-    text-align: right;
 }

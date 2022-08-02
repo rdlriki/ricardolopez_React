@@ -1,24 +1,20 @@
-.modal{
+.modalFormulario{
     font-family:  'Montserrat', sans-serif;
 }
-.modal-header, .modal-footer{
+.modalFormularioHeader, .modalFormularioFooter{
     background-color: #0b79cd;
     color: #ffffff;
 }
-.modal-body{
+.modalFormularioBody{
     background-color: #a2b2be;
-}
-
-.modal-body .text{
-    color: #acaaaa;
+    color: #432a31;
     font-style: italic;
 }
 
-
-.form-label{
+.modalFormularioLabel{
     color:#432a31;
 }
 
-.mensajeFinal{
+.modalFormularioLabelMensajeFinal{
     color: #432a31;
 }

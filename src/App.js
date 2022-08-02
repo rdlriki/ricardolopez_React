@@ -7,9 +7,12 @@ import ItemDetailContainerJsx from './components/ItemDetailContainer/ItemDetailC
  */import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { CartProvider } from './components/Context/CartContext';
 import Cart from './components/Cart/Cart';
-
+import FinalizarCompra from './components/FinalizarCompra/FinalizarCompra';
 
 function App() {
+  
+  var noDatos = false;
+
   return (
     <CartProvider> {/* Agrego el CartProvider */}
       <BrowserRouter>
@@ -20,6 +23,7 @@ function App() {
           <Route path="/categoria/:catid" element={<ItemListContainerJsx greetings="Elija de acuerdo a su Filtrado" />} />
           <Route path="/producto/:productoid" element={<ItemDetailContainerJsx />} />
           <Route path="/cart" element={<Cart />}/>
+          <Route path="/FinalizarCompra" element={<FinalizarCompra />}/>
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>

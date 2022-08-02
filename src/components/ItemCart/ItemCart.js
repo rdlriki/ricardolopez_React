@@ -37,14 +37,14 @@ function ItemCart() {
                                 <h5 className='titulo'><strong>{i.item.producto}</strong></h5>
                                 <p className='categoria'>{i.item.categoria}</p>
                                 <div className="unidades">
-                                    <div className="col-6 textUnid">
-                                        <p className="m-3">Unidades: {i.qty}</p>
+                                    <div className="textUnidades">
+                                        <p>Unidades: {i.qty}</p>
                                     </div>
                                 </div>
                                 <p className='precio'>Precio unitario: ${(i.item.precio)}</p>
                                 <p className='precio'>Precio total: ${(i.item.precio * i.qty)}</p>
                             </Col>
-                            <Col xs={3}>
+                            <Col xs={2}>
                                 <span className='favorito'>
                                 <Button variant="dark" size="sm" onClick={() => { removeFromCart(i.item.id) }}>Eliminar</Button> 
                                 </span>

@@ -1,0 +1,16 @@
+.modalNoDatos .modal{
+    font-family:  'Montserrat', sans-serif;
+}
+
+.modalNoDatosHeader, .modalNoDatosFooter{
+    background-color: #369d80;
+    color: #ffffff;
+    font-style: italic;
+    font-size: 25px;
+}
+.modalNoDatosBody{
+    background-color: #aed0eb;
+    color: black;
+    font-style: italic;
+    font-size: 15px;
+}

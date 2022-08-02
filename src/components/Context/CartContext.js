@@ -14,6 +14,8 @@ export const CartProvider = ({ defaultValue = [], children }) => {
     //Defino el carrito: CART
     const [cart, setCart] = useState(defaultValue);
 
+    const [noDato, setNoDato ] = useState(false)
+
     //Funcion para limpiar el carrito!!!!
     const clearCart = () => {
         setCart([]);
@@ -69,10 +71,16 @@ export const CartProvider = ({ defaultValue = [], children }) => {
     //Imprimo en consola el carrito
     console.log("Carrito: ", cart)
 
+    const noIngresoDato = () => {
+        setNoDato(!noDato)
+        }
+    
 
     //Comparto en el contexto el carrito, limpiar el carrito, agregar al carrito, eliminar del carrito, cantidad de items dentro del carrito y el total del carrito
     const context = {
         cart,
+        noDato,
+        noIngresoDato,
         clearCart,
         addToCart,
         removeFromCart,

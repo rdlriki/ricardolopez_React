@@ -14,7 +14,7 @@ function Cart() {
 
 
     return (
-        <div className='bodyCart'>
+        <div className='cartBody'>
             <Container>
                 <Row>
                     <Col className="colPadding">

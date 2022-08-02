@@ -106,9 +106,9 @@ En esta etapa deje los botones de sumar y restar, agregar carrito y reiniciar en
 
 
 ## PIGUARTE:
-**Piguarte es un e-commerce de productos de crochet. Se utiliza como "base de datos" Firebase.
+### Piguarte es un e-commerce de productos de crochet. Se utiliza como "base de datos" Firebase.
 
-Cuenta con:
+- Cuenta con:
     - Muestra todos los productos en la pagina inicial
     - Posee filtro por 3 categorías: Muniecos, Muniecas, Letras (no utilice la Ñ)
     - En cada imagen, se puede leer una breve descripcion

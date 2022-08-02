@@ -104,11 +104,16 @@ En esta etapa deje los botones de sumar y restar, agregar carrito y reiniciar en
             - Desde el complemento del formulario se detecta el flag que no se completo informacion y se ejecuta el modal.
             - Cuando se ejecuta el modal, se vuelve a cambiar el flag para reiniciar el analisis.
 
+    Por último, quería agradecer la predisposición en cada clase dando detalles y explicando punto por punto los temas para poder realizar el E-Commerce. Gracias por compartir experiencias y conocimientos con nosotros. 
+
+
+
+
 
 ## PIGUARTE:
 ### Piguarte es un e-commerce de productos de crochet. Se utiliza como "base de datos" Firebase.
 
-- Cuenta con:
+- El E-Commerce considera lo sigueinte:
     - Muestra todos los productos en la pagina inicial
     - Posee filtro por 3 categorías: Muniecos, Muniecas, Letras (no utilice la Ñ)
     - En cada imagen, se puede leer una breve descripcion
